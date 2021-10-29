@@ -1,0 +1,27 @@
+{
+  "state": 1,
+  "errorMsg": "成功",
+  "data": {
+    "type": "reg",
+    "id": 10178864,
+    "docName": "白恒舟",
+    "SumFee": "11",
+    "deptName": "生殖男科门诊",
+    "payTime": "2021-10-29 11:13:17",
+    "date": "2021-10-29 下午",
+    "card_id": "511025198807018792",
+    "userName": "邱泳天",
+    "nocard": 0,
+    "IDCardNo": "511025198807018792",
+    "notice": "1、为防止恶意抢号，累计3次超时未支付，或支付后未就医，将不能再使用微信预约挂号服务。<br>\r\n2、支付后需等待微信反馈消息，若消息提示成功后方可认为挂号成功，若失败，费用会7个工作日原路返回，若没有消息返回需等待确认。",
+    "jsApiParameters": {
+      "appId": "wxfdd02a5bec574795",
+      "nonceStr": "zfesp7kldllhrutq1rus2ngee70lspco",
+      "package": "prepay_id=wx291113178135071c9ba8fc9c5e3a210000",
+      "signType": "MD5",
+      "timeStamp": "1635477197",
+      "paySign": "4F1AD49B9D8E97B22D7E15D6161F9452"
+    },
+    "mweb_url": ""
+  }
+}

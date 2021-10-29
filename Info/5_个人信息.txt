@@ -1,0 +1,32 @@
+{
+  "state": 1,
+  "errorMsg": "成功",
+  "data": {
+    "restCard": 4,
+    "restNoCard": 0,
+    "cardList": [
+      {
+        "userid": "4735454",
+        "cardId": "5110**********8792",
+        "default": 1,
+        "userName": "邱泳天",
+        "IDCardNo": "511025198807018792",
+        "MobPhone": "13699435573",
+        "face": "0",
+        "PAPMINo": "21020660",
+        "card_qr": "/uploads/ehealthyQr/qr_511025198807018792.png",
+        "type": "3",
+        "bar_code": null,
+        "real_name": "1",
+        "sex": "1",
+        "birth": "1988-07-01",
+        "old_cardId": "511025198807018792",
+        "qrcode_v2": "176C2C2C52B69E728334FC393B25CBF2757CA4E34EF2878A198D4BCCA4AA9A0B:1::5100A0013",
+        "nocard": 0,
+        "age": 33,
+        "medical": 0
+      }
+    ],
+    "ai_userid": 0
+  }
+}

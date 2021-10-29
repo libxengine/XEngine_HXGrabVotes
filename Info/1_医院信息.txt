@@ -1,0 +1,4152 @@
+{
+  "state": 1,
+  "errorMsg": "成功",
+  "data": {
+    "华西院区": {
+      "19": {
+        "deptId": "0",
+        "deptName": "儿科门诊",
+        "LabelId": "0",
+        "districtCode": "1",
+        "treeID": "3",
+        "ParentId": "1",
+        "period": "上午",
+        "SeqNo": "1",
+        "convenience": 0,
+        "tree": {
+          "16": {
+            "deptId": "1001",
+            "deptName": "儿科门诊（内科）",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "7",
+            "ParentId": "3",
+            "period": "上午",
+            "SeqNo": "1",
+            "convenience": 0
+          },
+          "74": {
+            "deptId": "1625",
+            "deptName": "小儿外科门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "8",
+            "ParentId": "3",
+            "period": "上午",
+            "SeqNo": "2",
+            "convenience": 0
+          },
+          "94": {
+            "deptId": "1334",
+            "deptName": "儿童康复医学科门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "9",
+            "ParentId": "3",
+            "period": "上午",
+            "SeqNo": "3",
+            "convenience": 0
+          },
+          "112": {
+            "deptId": "0",
+            "deptName": "儿科特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "10",
+            "ParentId": "3",
+            "period": "上午",
+            "SeqNo": "4",
+            "convenience": 0,
+            "tree2": {
+              "4": {
+                "deptId": "0",
+                "deptName": "儿童夜遗尿及排尿功能障碍专病门诊",
+                "LabelId": "1",
+                "districtCode": "1",
+                "treeID": "11",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "65": {
+                "deptId": "0",
+                "deptName": "儿童哮喘专病门诊",
+                "LabelId": "2",
+                "districtCode": "1",
+                "treeID": "12",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "2",
+                "convenience": 0
+              },
+              "86": {
+                "deptId": "0",
+                "deptName": "儿童结核病门诊",
+                "LabelId": "3",
+                "districtCode": "1",
+                "treeID": "13",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "3",
+                "convenience": 0
+              },
+              "102": {
+                "deptId": "0",
+                "deptName": "儿童癫痫门诊",
+                "LabelId": "28",
+                "districtCode": "1",
+                "treeID": "14",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "4",
+                "convenience": 0
+              },
+              "163": {
+                "deptId": "0",
+                "deptName": "儿童多动症专病门诊",
+                "LabelId": "34",
+                "districtCode": "1",
+                "treeID": "16",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "6",
+                "convenience": 0
+              },
+              "179": {
+                "deptId": "0",
+                "deptName": "儿童语言专科门诊",
+                "LabelId": "30",
+                "districtCode": "1",
+                "treeID": "17",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "7",
+                "convenience": 0
+              },
+              "209": {
+                "deptId": "0",
+                "deptName": "儿童过敏门诊",
+                "LabelId": "35",
+                "districtCode": "1",
+                "treeID": "18",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "8",
+                "convenience": 0
+              },
+              "219": {
+                "deptId": "0",
+                "deptName": "高危早产儿随访门诊",
+                "LabelId": "11",
+                "districtCode": "1",
+                "treeID": "19",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "9",
+                "convenience": 0
+              },
+              "244": {
+                "deptId": "0",
+                "deptName": "早产儿营养及早期综合发展门诊",
+                "LabelId": "10",
+                "districtCode": "1",
+                "treeID": "20",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "10",
+                "convenience": 0
+              },
+              "252": {
+                "deptId": "0",
+                "deptName": "儿童矮小症门诊",
+                "LabelId": "39",
+                "districtCode": "1",
+                "treeID": "21",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "11",
+                "convenience": 0
+              },
+              "262": {
+                "deptId": "0",
+                "deptName": "儿童性早熟门诊",
+                "LabelId": "40",
+                "districtCode": "1",
+                "treeID": "22",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "12",
+                "convenience": 0
+              },
+              "279": {
+                "deptId": "0",
+                "deptName": "儿童代谢性疾病门诊",
+                "LabelId": "41",
+                "districtCode": "1",
+                "treeID": "23",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "13",
+                "convenience": 0
+              },
+              "287": {
+                "deptId": "2012",
+                "deptName": "小儿遗传代谢内分泌科方便门诊",
+                "LabelId": "0",
+                "districtCode": "1",
+                "treeID": "400",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "14",
+                "convenience": 0
+              },
+              "291": {
+                "deptId": "0",
+                "deptName": "儿童肝病门诊",
+                "LabelId": "44",
+                "districtCode": "1",
+                "treeID": "210",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "15",
+                "convenience": 0
+              },
+              "303": {
+                "deptId": "0",
+                "deptName": "儿童遗传代谢内分泌门诊",
+                "LabelId": "29",
+                "districtCode": "1",
+                "treeID": "15",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "16",
+                "convenience": 0
+              },
+              "309": {
+                "deptId": "0",
+                "deptName": "喂养困难特色门诊",
+                "LabelId": "50",
+                "districtCode": "1",
+                "treeID": "251",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "17",
+                "convenience": 0
+              },
+              "316": {
+                "deptId": "0",
+                "deptName": "胎儿心血管疾病特色门诊",
+                "LabelId": "52",
+                "districtCode": "1",
+                "treeID": "255",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "18",
+                "convenience": 0
+              },
+              "323": {
+                "deptId": "0",
+                "deptName": "儿童糖尿病护理门诊",
+                "LabelId": "54",
+                "districtCode": "1",
+                "treeID": "260",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "19",
+                "convenience": 0
+              },
+              "327": {
+                "deptId": "0",
+                "deptName": "神经发育特色门诊",
+                "LabelId": "53",
+                "districtCode": "1",
+                "treeID": "269",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "20",
+                "convenience": 0
+              },
+              "330": {
+                "deptId": "0",
+                "deptName": "儿童实体肿瘤门诊",
+                "LabelId": "56",
+                "districtCode": "1",
+                "treeID": "283",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "21",
+                "convenience": 0
+              },
+              "335": {
+                "deptId": "0",
+                "deptName": "造血干细胞移植门诊",
+                "LabelId": "57",
+                "districtCode": "1",
+                "treeID": "284",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "22",
+                "convenience": 0
+              },
+              "339": {
+                "deptId": "0",
+                "deptName": "儿童晕厥门诊",
+                "LabelId": "58",
+                "districtCode": "1",
+                "treeID": "285",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "23",
+                "convenience": 0
+              },
+              "342": {
+                "deptId": "0",
+                "deptName": "儿童血管瘤门诊",
+                "LabelId": "59",
+                "districtCode": "1",
+                "treeID": "286",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "24",
+                "convenience": 0
+              },
+              "347": {
+                "deptId": "0",
+                "deptName": "新生儿疾病筛查门诊",
+                "LabelId": "60",
+                "districtCode": "1",
+                "treeID": "287",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "25",
+                "convenience": 0
+              },
+              "351": {
+                "deptId": "0",
+                "deptName": "儿童血液肿瘤护理管理门诊（护理）",
+                "LabelId": "67",
+                "districtCode": "1",
+                "treeID": "296",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "26",
+                "convenience": 0
+              },
+              "354": {
+                "deptId": "0",
+                "deptName": "高危新生儿及早产儿医护一体化门诊（护理）",
+                "LabelId": "70",
+                "districtCode": "1",
+                "treeID": "297",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "27",
+                "convenience": 0
+              },
+              "358": {
+                "deptId": "0",
+                "deptName": "儿童PICC随访管理门诊（护理）",
+                "LabelId": "9",
+                "districtCode": "1",
+                "treeID": "24",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "31",
+                "convenience": 0
+              },
+              "365": {
+                "deptId": "0",
+                "deptName": "教学门诊",
+                "LabelId": "12",
+                "districtCode": "1",
+                "treeID": "408",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "34",
+                "convenience": 0
+              },
+              "367": {
+                "deptId": "0",
+                "deptName": "肌病门诊",
+                "LabelId": "48",
+                "districtCode": "1",
+                "treeID": "229",
+                "ParentId": "10",
+                "period": "上午",
+                "SeqNo": "35",
+                "convenience": 0
+              }
+            }
+          },
+          "153": {
+            "deptId": "2010",
+            "deptName": "儿童眼科门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "280",
+            "ParentId": "3",
+            "period": "上午",
+            "SeqNo": "5",
+            "convenience": 0
+          }
+        }
+      },
+      "44": {
+        "deptId": "0",
+        "deptName": "妇产科门诊",
+        "LabelId": "0",
+        "districtCode": "1",
+        "treeID": "4",
+        "ParentId": "1",
+        "period": "上午",
+        "SeqNo": "2",
+        "convenience": 0,
+        "tree": {
+          "25": {
+            "deptId": "996",
+            "deptName": "妇科门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "25",
+            "ParentId": "4",
+            "period": "上午",
+            "SeqNo": "1",
+            "convenience": 0
+          },
+          "48": {
+            "deptId": "997",
+            "deptName": "产科门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "26",
+            "ParentId": "4",
+            "period": "上午",
+            "SeqNo": "2",
+            "convenience": 0
+          },
+          "101": {
+            "deptId": "998",
+            "deptName": "生殖内分泌科门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "28",
+            "ParentId": "4",
+            "period": "上午",
+            "SeqNo": "3",
+            "convenience": 0
+          },
+          "120": {
+            "deptId": "1022",
+            "deptName": "生殖医学科（不孕不育及试管婴儿）门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "29",
+            "ParentId": "4",
+            "period": "上午",
+            "SeqNo": "4",
+            "convenience": 0
+          },
+          "136": {
+            "deptId": "0",
+            "deptName": "妇科特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "30",
+            "ParentId": "4",
+            "period": "上午",
+            "SeqNo": "5",
+            "convenience": 0,
+            "tree2": {
+              "5": {
+                "deptId": "0",
+                "deptName": "阴道镜门诊",
+                "LabelId": "16",
+                "districtCode": "1",
+                "treeID": "31",
+                "ParentId": "30",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "66": {
+                "deptId": "0",
+                "deptName": "盆底疾病与康复专病门诊",
+                "LabelId": "7",
+                "districtCode": "1",
+                "treeID": "32",
+                "ParentId": "30",
+                "period": "上午",
+                "SeqNo": "2",
+                "convenience": 0
+              },
+              "87": {
+                "deptId": "0",
+                "deptName": "妇科术后复查门诊",
+                "LabelId": "18",
+                "districtCode": "1",
+                "treeID": "33",
+                "ParentId": "30",
+                "period": "上午",
+                "SeqNo": "3",
+                "convenience": 0
+              },
+              "103": {
+                "deptId": "0",
+                "deptName": "盆底康复门诊",
+                "LabelId": "17",
+                "districtCode": "1",
+                "treeID": "34",
+                "ParentId": "30",
+                "period": "上午",
+                "SeqNo": "4",
+                "convenience": 0
+              },
+              "144": {
+                "deptId": "0",
+                "deptName": "PAC/避孕咨询门诊（护理）",
+                "LabelId": "8",
+                "districtCode": "1",
+                "treeID": "35",
+                "ParentId": "30",
+                "period": "上午",
+                "SeqNo": "5",
+                "convenience": 0
+              },
+              "164": {
+                "deptId": "0",
+                "deptName": "成人PICC随访管理门诊（护理）",
+                "LabelId": "13",
+                "districtCode": "1",
+                "treeID": "36",
+                "ParentId": "30",
+                "period": "上午",
+                "SeqNo": "6",
+                "convenience": 0
+              },
+              "180": {
+                "deptId": "0",
+                "deptName": "妇科疾病全程管理咨询门诊（护理）",
+                "LabelId": "31",
+                "districtCode": "1",
+                "treeID": "37",
+                "ParentId": "30",
+                "period": "上午",
+                "SeqNo": "7",
+                "convenience": 0
+              },
+              "210": {
+                "deptId": "0",
+                "deptName": "伤口治疗门诊（护理）",
+                "LabelId": "33",
+                "districtCode": "1",
+                "treeID": "38",
+                "ParentId": "30",
+                "period": "上午",
+                "SeqNo": "8",
+                "convenience": 0
+              },
+              "220": {
+                "deptId": "0",
+                "deptName": "女性性医学门诊",
+                "LabelId": "45",
+                "districtCode": "1",
+                "treeID": "211",
+                "ParentId": "30",
+                "period": "上午",
+                "SeqNo": "9",
+                "convenience": 0
+              },
+              "230": {
+                "deptId": "0",
+                "deptName": "妇科泌尿门诊",
+                "LabelId": "55",
+                "districtCode": "1",
+                "treeID": "271",
+                "ParentId": "30",
+                "period": "上午",
+                "SeqNo": "10",
+                "convenience": 0
+              },
+              "253": {
+                "deptId": "0",
+                "deptName": "宫腔疾病专科门诊",
+                "LabelId": "61",
+                "districtCode": "1",
+                "treeID": "288",
+                "ParentId": "30",
+                "period": "上午",
+                "SeqNo": "11",
+                "convenience": 0
+              },
+              "263": {
+                "deptId": "0",
+                "deptName": "宫腔粘连/宫腔镜专病门诊",
+                "LabelId": "62",
+                "districtCode": "1",
+                "treeID": "289",
+                "ParentId": "30",
+                "period": "上午",
+                "SeqNo": "12",
+                "convenience": 0
+              },
+              "280": {
+                "deptId": "0",
+                "deptName": "青少年妇科/小儿妇科门诊",
+                "LabelId": "63",
+                "districtCode": "1",
+                "treeID": "290",
+                "ParentId": "30",
+                "period": "上午",
+                "SeqNo": "13",
+                "convenience": 0
+              },
+              "284": {
+                "deptId": "0",
+                "deptName": "子宫内膜异位症全程管理门诊",
+                "LabelId": "66",
+                "districtCode": "1",
+                "treeID": "291",
+                "ParentId": "30",
+                "period": "上午",
+                "SeqNo": "14",
+                "convenience": 0
+              },
+              "292": {
+                "deptId": "0",
+                "deptName": "妇科淋巴水肿护理门诊（护理）",
+                "LabelId": "68",
+                "districtCode": "1",
+                "treeID": "298",
+                "ParentId": "30",
+                "period": "上午",
+                "SeqNo": "15",
+                "convenience": 0
+              },
+              "305": {
+                "deptId": "0",
+                "deptName": "普通妇科专科门诊",
+                "LabelId": "79",
+                "districtCode": "1",
+                "treeID": "377",
+                "ParentId": "30",
+                "period": "上午",
+                "SeqNo": "16",
+                "convenience": 0
+              },
+              "310": {
+                "deptId": "0",
+                "deptName": "妇科肿瘤专科门诊",
+                "LabelId": "80",
+                "districtCode": "1",
+                "treeID": "378",
+                "ParentId": "30",
+                "period": "上午",
+                "SeqNo": "17",
+                "convenience": 0
+              },
+              "317": {
+                "deptId": "0",
+                "deptName": "宫颈疾病专科门诊",
+                "LabelId": "81",
+                "districtCode": "1",
+                "treeID": "379",
+                "ParentId": "30",
+                "period": "上午",
+                "SeqNo": "18",
+                "convenience": 0
+              },
+              "324": {
+                "deptId": "0",
+                "deptName": "教学门诊",
+                "LabelId": "12",
+                "districtCode": "1",
+                "treeID": "410",
+                "ParentId": "30",
+                "period": "上午",
+                "SeqNo": "19",
+                "convenience": 0
+              }
+            }
+          },
+          "178": {
+            "deptId": "0",
+            "deptName": "产科特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "39",
+            "ParentId": "4",
+            "period": "上午",
+            "SeqNo": "6",
+            "convenience": 0,
+            "tree2": {
+              "24": {
+                "deptId": "0",
+                "deptName": "高龄孕产妇专科门诊",
+                "LabelId": "6",
+                "districtCode": "1",
+                "treeID": "46",
+                "ParentId": "39",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "47": {
+                "deptId": "0",
+                "deptName": "自发性早产门诊",
+                "LabelId": "23",
+                "districtCode": "1",
+                "treeID": "47",
+                "ParentId": "39",
+                "period": "上午",
+                "SeqNo": "2",
+                "convenience": 0
+              },
+              "100": {
+                "deptId": "0",
+                "deptName": "胎儿医学门诊",
+                "LabelId": "24",
+                "districtCode": "1",
+                "treeID": "48",
+                "ParentId": "39",
+                "period": "上午",
+                "SeqNo": "3",
+                "convenience": 0
+              },
+              "118": {
+                "deptId": "0",
+                "deptName": "产后复查门诊",
+                "LabelId": "14",
+                "districtCode": "1",
+                "treeID": "49",
+                "ParentId": "39",
+                "period": "上午",
+                "SeqNo": "4",
+                "convenience": 0
+              },
+              "134": {
+                "deptId": "0",
+                "deptName": "母乳喂养门诊（护理）",
+                "LabelId": "15",
+                "districtCode": "1",
+                "treeID": "50",
+                "ParentId": "39",
+                "period": "上午",
+                "SeqNo": "5",
+                "convenience": 0
+              },
+              "176": {
+                "deptId": "0",
+                "deptName": "分娩咨询门诊（护理）",
+                "LabelId": "32",
+                "districtCode": "1",
+                "treeID": "51",
+                "ParentId": "39",
+                "period": "上午",
+                "SeqNo": "6",
+                "convenience": 0
+              },
+              "189": {
+                "deptId": "0",
+                "deptName": "孕期营养与体重管理门诊(护理)",
+                "LabelId": "72",
+                "districtCode": "1",
+                "treeID": "357",
+                "ParentId": "39",
+                "period": "上午",
+                "SeqNo": "7",
+                "convenience": 0
+              },
+              "202": {
+                "deptId": "0",
+                "deptName": "宫颈机能不全与早产门诊",
+                "LabelId": "74",
+                "districtCode": "1",
+                "treeID": "358",
+                "ParentId": "39",
+                "period": "上午",
+                "SeqNo": "8",
+                "convenience": 0
+              },
+              "228": {
+                "deptId": "0",
+                "deptName": "妊娠期高血压疾病专科门诊",
+                "LabelId": "75",
+                "districtCode": "1",
+                "treeID": "359",
+                "ParentId": "39",
+                "period": "上午",
+                "SeqNo": "9",
+                "convenience": 0
+              },
+              "238": {
+                "deptId": "0",
+                "deptName": "妊娠并发症专科门诊",
+                "LabelId": "76",
+                "districtCode": "1",
+                "treeID": "360",
+                "ParentId": "39",
+                "period": "上午",
+                "SeqNo": "10",
+                "convenience": 0
+              },
+              "247": {
+                "deptId": "0",
+                "deptName": "胎盘疾病专科门诊",
+                "LabelId": "77",
+                "districtCode": "1",
+                "treeID": "361",
+                "ParentId": "39",
+                "period": "上午",
+                "SeqNo": "11",
+                "convenience": 0
+              },
+              "270": {
+                "deptId": "0",
+                "deptName": "双胎门诊",
+                "LabelId": "78",
+                "districtCode": "1",
+                "treeID": "362",
+                "ParentId": "39",
+                "period": "上午",
+                "SeqNo": "12",
+                "convenience": 0
+              }
+            }
+          },
+          "190": {
+            "deptId": "0",
+            "deptName": "生殖内分泌特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "52",
+            "ParentId": "4",
+            "period": "上午",
+            "SeqNo": "7",
+            "convenience": 0,
+            "tree2": {
+              "1": {
+                "deptId": "0",
+                "deptName": "复发性流产门诊",
+                "LabelId": "5",
+                "districtCode": "1",
+                "treeID": "53",
+                "ParentId": "52",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "63": {
+                "deptId": "0",
+                "deptName": "更年期门诊",
+                "LabelId": "26",
+                "districtCode": "1",
+                "treeID": "54",
+                "ParentId": "52",
+                "period": "上午",
+                "SeqNo": "2",
+                "convenience": 0
+              },
+              "113": {
+                "deptId": "0",
+                "deptName": "监测排卵综合管理",
+                "LabelId": "25",
+                "districtCode": "1",
+                "treeID": "56",
+                "ParentId": "52",
+                "period": "上午",
+                "SeqNo": "4",
+                "convenience": 0
+              },
+              "129": {
+                "deptId": "0",
+                "deptName": "计划生育门诊",
+                "LabelId": "47",
+                "districtCode": "1",
+                "treeID": "226",
+                "ParentId": "52",
+                "period": "上午",
+                "SeqNo": "5",
+                "convenience": 0
+              }
+            }
+          },
+          "203": {
+            "deptId": "0",
+            "deptName": "生殖医学（不孕不育及试管婴儿）特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "246",
+            "ParentId": "4",
+            "period": "上午",
+            "SeqNo": "8",
+            "convenience": 0,
+            "tree2": {
+              "75": {
+                "deptId": "0",
+                "deptName": "生殖遗传门诊",
+                "LabelId": "64",
+                "districtCode": "1",
+                "treeID": "292",
+                "ParentId": "246",
+                "period": "上午",
+                "SeqNo": "3",
+                "convenience": 0
+              },
+              "121": {
+                "deptId": "0",
+                "deptName": "生育力保存门诊",
+                "LabelId": "65",
+                "districtCode": "1",
+                "treeID": "293",
+                "ParentId": "246",
+                "period": "上午",
+                "SeqNo": "4",
+                "convenience": 0
+              },
+              "138": {
+                "deptId": "0",
+                "deptName": "复发性流产门诊",
+                "LabelId": "5",
+                "districtCode": "1",
+                "treeID": "294",
+                "ParentId": "246",
+                "period": "上午",
+                "SeqNo": "5",
+                "convenience": 0
+              },
+              "155": {
+                "deptId": "0",
+                "deptName": "多囊卵巢综合征门诊",
+                "LabelId": "42",
+                "districtCode": "1",
+                "treeID": "295",
+                "ParentId": "246",
+                "period": "上午",
+                "SeqNo": "6",
+                "convenience": 0
+              },
+              "192": {
+                "deptId": "0",
+                "deptName": "孕前保健门诊",
+                "LabelId": "73",
+                "districtCode": "1",
+                "treeID": "350",
+                "ParentId": "246",
+                "period": "上午",
+                "SeqNo": "7",
+                "convenience": 0
+              }
+            }
+          },
+          "229": {
+            "deptId": "1934",
+            "deptName": "产后复查门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "265",
+            "ParentId": "4",
+            "period": "上午",
+            "SeqNo": "9",
+            "convenience": 0
+          },
+          "239": {
+            "deptId": "0",
+            "deptName": "医学遗传科/产前诊断中心门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "369",
+            "ParentId": "4",
+            "period": "上午",
+            "SeqNo": "10",
+            "convenience": 0,
+            "tree2": {
+              "15": {
+                "deptId": "2008",
+                "deptName": "优生/遗传/产前诊断门诊",
+                "LabelId": "0",
+                "districtCode": "1",
+                "treeID": "370",
+                "ParentId": "369",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              }
+            }
+          }
+        }
+      },
+      "98": {
+        "deptId": "0",
+        "deptName": "便民门诊",
+        "LabelId": "0",
+        "districtCode": "1",
+        "treeID": "5",
+        "ParentId": "1",
+        "period": "上午",
+        "SeqNo": "3",
+        "convenience": 0,
+        "tree": {
+          "9": {
+            "deptId": "1096",
+            "deptName": "便民门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "57",
+            "ParentId": "5",
+            "period": "上午",
+            "SeqNo": "1",
+            "convenience": 1
+          }
+        }
+      },
+      "116": {
+        "deptId": "0",
+        "deptName": "特色门诊",
+        "LabelId": "0",
+        "districtCode": "1",
+        "treeID": "6",
+        "ParentId": "1",
+        "period": "上午",
+        "SeqNo": "4",
+        "convenience": 0,
+        "tree": {
+          "36": {
+            "deptId": "1306",
+            "deptName": "临床营养门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "58",
+            "ParentId": "6",
+            "period": "上午",
+            "SeqNo": "1",
+            "convenience": 0
+          },
+          "57": {
+            "deptId": "0",
+            "deptName": "麻醉门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "59",
+            "ParentId": "6",
+            "period": "上午",
+            "SeqNo": "2",
+            "convenience": 0,
+            "tree2": {
+              "27": {
+                "deptId": "1261",
+                "deptName": "麻醉门诊",
+                "LabelId": "0",
+                "districtCode": "1",
+                "treeID": "345",
+                "ParentId": "59",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "50": {
+                "deptId": "0",
+                "deptName": "分娩镇痛门诊",
+                "LabelId": "71",
+                "districtCode": "1",
+                "treeID": "346",
+                "ParentId": "59",
+                "period": "上午",
+                "SeqNo": "2",
+                "convenience": 0
+              }
+            }
+          },
+          "80": {
+            "deptId": "1374",
+            "deptName": "心理咨询门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "60",
+            "ParentId": "6",
+            "period": "上午",
+            "SeqNo": "3",
+            "convenience": 0
+          },
+          "125": {
+            "deptId": "0",
+            "deptName": "儿科特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "61",
+            "ParentId": "6",
+            "period": "上午",
+            "SeqNo": "4",
+            "convenience": 0,
+            "tree2": {
+              "38": {
+                "deptId": "0",
+                "deptName": "儿童夜遗尿及排尿功能障碍专病门诊",
+                "LabelId": "1",
+                "districtCode": "1",
+                "treeID": "62",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "59": {
+                "deptId": "0",
+                "deptName": "儿童哮喘专病门诊",
+                "LabelId": "2",
+                "districtCode": "1",
+                "treeID": "63",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "2",
+                "convenience": 0
+              },
+              "82": {
+                "deptId": "0",
+                "deptName": "儿童结核病门诊",
+                "LabelId": "3",
+                "districtCode": "1",
+                "treeID": "64",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "3",
+                "convenience": 0
+              },
+              "126": {
+                "deptId": "0",
+                "deptName": "儿童癫痫门诊",
+                "LabelId": "28",
+                "districtCode": "1",
+                "treeID": "65",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "4",
+                "convenience": 0
+              },
+              "160": {
+                "deptId": "0",
+                "deptName": "儿童多动症专病门诊",
+                "LabelId": "34",
+                "districtCode": "1",
+                "treeID": "67",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "6",
+                "convenience": 0
+              },
+              "196": {
+                "deptId": "0",
+                "deptName": "儿童语言专病门诊",
+                "LabelId": "30",
+                "districtCode": "1",
+                "treeID": "68",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "7",
+                "convenience": 0
+              },
+              "206": {
+                "deptId": "0",
+                "deptName": "儿童过敏门诊",
+                "LabelId": "35",
+                "districtCode": "1",
+                "treeID": "69",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "8",
+                "convenience": 0
+              },
+              "216": {
+                "deptId": "0",
+                "deptName": "高危早产儿随访门诊",
+                "LabelId": "11",
+                "districtCode": "1",
+                "treeID": "70",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "9",
+                "convenience": 0
+              },
+              "241": {
+                "deptId": "0",
+                "deptName": "早产儿营养及早期综合发展门诊",
+                "LabelId": "10",
+                "districtCode": "1",
+                "treeID": "71",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "10",
+                "convenience": 0
+              },
+              "249": {
+                "deptId": "0",
+                "deptName": "儿童矮小症门诊",
+                "LabelId": "39",
+                "districtCode": "1",
+                "treeID": "72",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "11",
+                "convenience": 0
+              },
+              "259": {
+                "deptId": "0",
+                "deptName": "儿童性早熟门诊",
+                "LabelId": "40",
+                "districtCode": "1",
+                "treeID": "73",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "12",
+                "convenience": 0
+              },
+              "277": {
+                "deptId": "0",
+                "deptName": "儿童代谢性疾病门诊",
+                "LabelId": "41",
+                "districtCode": "1",
+                "treeID": "74",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "13",
+                "convenience": 0
+              },
+              "285": {
+                "deptId": "2012",
+                "deptName": "小儿遗传代谢内分泌科方便门诊",
+                "LabelId": "0",
+                "districtCode": "1",
+                "treeID": "401",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "14",
+                "convenience": 0
+              },
+              "296": {
+                "deptId": "0",
+                "deptName": "儿童糖尿病护理门诊",
+                "LabelId": "54",
+                "districtCode": "1",
+                "treeID": "262",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "15",
+                "convenience": 0
+              },
+              "301": {
+                "deptId": "0",
+                "deptName": "儿童遗传代谢内分泌门诊",
+                "LabelId": "29",
+                "districtCode": "1",
+                "treeID": "66",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "16",
+                "convenience": 0
+              },
+              "308": {
+                "deptId": "0",
+                "deptName": "喂养困难特色门诊",
+                "LabelId": "50",
+                "districtCode": "1",
+                "treeID": "252",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "17",
+                "convenience": 0
+              },
+              "315": {
+                "deptId": "0",
+                "deptName": "胎儿心血管疾病特色门诊",
+                "LabelId": "52",
+                "districtCode": "1",
+                "treeID": "256",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "18",
+                "convenience": 0
+              },
+              "326": {
+                "deptId": "0",
+                "deptName": "神经发育特色门诊",
+                "LabelId": "53",
+                "districtCode": "1",
+                "treeID": "268",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "20",
+                "convenience": 0
+              },
+              "329": {
+                "deptId": "0",
+                "deptName": "儿童实体肿瘤门诊",
+                "LabelId": "56",
+                "districtCode": "1",
+                "treeID": "322",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "21",
+                "convenience": 0
+              },
+              "334": {
+                "deptId": "0",
+                "deptName": "造血干细胞移植门诊",
+                "LabelId": "57",
+                "districtCode": "1",
+                "treeID": "323",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "22",
+                "convenience": 0
+              },
+              "338": {
+                "deptId": "0",
+                "deptName": "儿童晕厥门诊",
+                "LabelId": "58",
+                "districtCode": "1",
+                "treeID": "324",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "23",
+                "convenience": 0
+              },
+              "341": {
+                "deptId": "0",
+                "deptName": "儿童血管瘤门诊",
+                "LabelId": "59",
+                "districtCode": "1",
+                "treeID": "325",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "24",
+                "convenience": 0
+              },
+              "346": {
+                "deptId": "0",
+                "deptName": "新生儿疾病筛查门诊",
+                "LabelId": "60",
+                "districtCode": "1",
+                "treeID": "326",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "25",
+                "convenience": 0
+              },
+              "350": {
+                "deptId": "0",
+                "deptName": "儿童血液肿瘤护理管理门诊（护理）",
+                "LabelId": "67",
+                "districtCode": "1",
+                "treeID": "327",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "26",
+                "convenience": 0
+              },
+              "353": {
+                "deptId": "0",
+                "deptName": "高危新生儿及早产儿医护一体化门诊（护理）",
+                "LabelId": "70",
+                "districtCode": "1",
+                "treeID": "328",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "27",
+                "convenience": 0
+              },
+              "357": {
+                "deptId": "0",
+                "deptName": "儿童PICC随访管理门诊（护理）",
+                "LabelId": "9",
+                "districtCode": "1",
+                "treeID": "75",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "31",
+                "convenience": 0
+              },
+              "359": {
+                "deptId": "0",
+                "deptName": "儿童肝病门诊",
+                "LabelId": "44",
+                "districtCode": "1",
+                "treeID": "212",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "32",
+                "convenience": 0
+              },
+              "364": {
+                "deptId": "0",
+                "deptName": "教学门诊",
+                "LabelId": "12",
+                "districtCode": "1",
+                "treeID": "409",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "34",
+                "convenience": 0
+              },
+              "366": {
+                "deptId": "0",
+                "deptName": "肌病门诊",
+                "LabelId": "48",
+                "districtCode": "1",
+                "treeID": "230",
+                "ParentId": "61",
+                "period": "上午",
+                "SeqNo": "35",
+                "convenience": 0
+              }
+            }
+          },
+          "141": {
+            "deptId": "0",
+            "deptName": "妇科特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "76",
+            "ParentId": "6",
+            "period": "上午",
+            "SeqNo": "5",
+            "convenience": 0,
+            "tree2": {
+              "0": {
+                "deptId": "0",
+                "deptName": "阴道镜门诊",
+                "LabelId": "16",
+                "districtCode": "1",
+                "treeID": "77",
+                "ParentId": "76",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "62": {
+                "deptId": "0",
+                "deptName": "盆底疾病与康复专病门诊",
+                "LabelId": "7",
+                "districtCode": "1",
+                "treeID": "78",
+                "ParentId": "76",
+                "period": "上午",
+                "SeqNo": "2",
+                "convenience": 0
+              },
+              "84": {
+                "deptId": "0",
+                "deptName": "妇科术后复查门诊",
+                "LabelId": "18",
+                "districtCode": "1",
+                "treeID": "79",
+                "ParentId": "76",
+                "period": "上午",
+                "SeqNo": "3",
+                "convenience": 0
+              },
+              "128": {
+                "deptId": "0",
+                "deptName": "盆底康复门诊",
+                "LabelId": "17",
+                "districtCode": "1",
+                "treeID": "80",
+                "ParentId": "76",
+                "period": "上午",
+                "SeqNo": "4",
+                "convenience": 0
+              },
+              "143": {
+                "deptId": "0",
+                "deptName": "PAC/避孕咨询门诊（护理）",
+                "LabelId": "8",
+                "districtCode": "1",
+                "treeID": "81",
+                "ParentId": "76",
+                "period": "上午",
+                "SeqNo": "5",
+                "convenience": 0
+              },
+              "162": {
+                "deptId": "0",
+                "deptName": "成人PICC随访管理门诊（护理）",
+                "LabelId": "13",
+                "districtCode": "1",
+                "treeID": "83",
+                "ParentId": "76",
+                "period": "上午",
+                "SeqNo": "6",
+                "convenience": 0
+              },
+              "198": {
+                "deptId": "0",
+                "deptName": "妇科疾病全程管理咨询门诊（护理）",
+                "LabelId": "31",
+                "districtCode": "1",
+                "treeID": "85",
+                "ParentId": "76",
+                "period": "上午",
+                "SeqNo": "7",
+                "convenience": 0
+              },
+              "208": {
+                "deptId": "0",
+                "deptName": "伤口治疗门诊（护理）",
+                "LabelId": "33",
+                "districtCode": "1",
+                "treeID": "86",
+                "ParentId": "76",
+                "period": "上午",
+                "SeqNo": "8",
+                "convenience": 0
+              },
+              "218": {
+                "deptId": "0",
+                "deptName": "女性性医学门诊",
+                "LabelId": "45",
+                "districtCode": "1",
+                "treeID": "213",
+                "ParentId": "76",
+                "period": "上午",
+                "SeqNo": "9",
+                "convenience": 0
+              },
+              "243": {
+                "deptId": "0",
+                "deptName": "宫腔疾病专科门诊",
+                "LabelId": "61",
+                "districtCode": "1",
+                "treeID": "329",
+                "ParentId": "76",
+                "period": "上午",
+                "SeqNo": "10",
+                "convenience": 0
+              },
+              "251": {
+                "deptId": "0",
+                "deptName": "宫腔粘连/宫腔镜专病门诊",
+                "LabelId": "62",
+                "districtCode": "1",
+                "treeID": "330",
+                "ParentId": "76",
+                "period": "上午",
+                "SeqNo": "11",
+                "convenience": 0
+              },
+              "261": {
+                "deptId": "0",
+                "deptName": "青少年妇科/小儿妇科门诊",
+                "LabelId": "63",
+                "districtCode": "1",
+                "treeID": "331",
+                "ParentId": "76",
+                "period": "上午",
+                "SeqNo": "12",
+                "convenience": 0
+              },
+              "278": {
+                "deptId": "0",
+                "deptName": "子宫内膜异位症全程管理门诊",
+                "LabelId": "66",
+                "districtCode": "1",
+                "treeID": "332",
+                "ParentId": "76",
+                "period": "上午",
+                "SeqNo": "13",
+                "convenience": 0
+              },
+              "283": {
+                "deptId": "0",
+                "deptName": "妇科淋巴水肿护理门诊（护理）",
+                "LabelId": "68",
+                "districtCode": "1",
+                "treeID": "333",
+                "ParentId": "76",
+                "period": "上午",
+                "SeqNo": "14",
+                "convenience": 0
+              },
+              "299": {
+                "deptId": "0",
+                "deptName": "普通妇科专科门诊",
+                "LabelId": "79",
+                "districtCode": "1",
+                "treeID": "383",
+                "ParentId": "76",
+                "period": "上午",
+                "SeqNo": "16",
+                "convenience": 0
+              },
+              "313": {
+                "deptId": "0",
+                "deptName": "妇科肿瘤专科门诊",
+                "LabelId": "80",
+                "districtCode": "1",
+                "treeID": "384",
+                "ParentId": "76",
+                "period": "上午",
+                "SeqNo": "17",
+                "convenience": 0
+              },
+              "320": {
+                "deptId": "0",
+                "deptName": "宫颈疾病专科门诊",
+                "LabelId": "81",
+                "districtCode": "1",
+                "treeID": "385",
+                "ParentId": "76",
+                "period": "上午",
+                "SeqNo": "18",
+                "convenience": 0
+              },
+              "322": {
+                "deptId": "0",
+                "deptName": "教学门诊",
+                "LabelId": "12",
+                "districtCode": "1",
+                "treeID": "411",
+                "ParentId": "76",
+                "period": "上午",
+                "SeqNo": "19",
+                "convenience": 0
+              }
+            }
+          },
+          "159": {
+            "deptId": "0",
+            "deptName": "产科特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "87",
+            "ParentId": "6",
+            "period": "上午",
+            "SeqNo": "6",
+            "convenience": 0,
+            "tree2": {
+              "34": {
+                "deptId": "0",
+                "deptName": "高龄孕产妇专科门诊",
+                "LabelId": "6",
+                "districtCode": "1",
+                "treeID": "88",
+                "ParentId": "87",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "55": {
+                "deptId": "0",
+                "deptName": "自发性早产门诊",
+                "LabelId": "23",
+                "districtCode": "1",
+                "treeID": "90",
+                "ParentId": "87",
+                "period": "上午",
+                "SeqNo": "2",
+                "convenience": 0
+              },
+              "78": {
+                "deptId": "0",
+                "deptName": "胎儿医学门诊",
+                "LabelId": "24",
+                "districtCode": "1",
+                "treeID": "91",
+                "ParentId": "87",
+                "period": "上午",
+                "SeqNo": "3",
+                "convenience": 0
+              },
+              "124": {
+                "deptId": "0",
+                "deptName": "产后复查门诊",
+                "LabelId": "14",
+                "districtCode": "1",
+                "treeID": "92",
+                "ParentId": "87",
+                "period": "上午",
+                "SeqNo": "4",
+                "convenience": 0
+              },
+              "140": {
+                "deptId": "0",
+                "deptName": "母乳喂养门诊（护理）",
+                "LabelId": "15",
+                "districtCode": "1",
+                "treeID": "93",
+                "ParentId": "87",
+                "period": "上午",
+                "SeqNo": "5",
+                "convenience": 0
+              },
+              "158": {
+                "deptId": "0",
+                "deptName": "分娩咨询门诊（护理）",
+                "LabelId": "32",
+                "districtCode": "1",
+                "treeID": "94",
+                "ParentId": "87",
+                "period": "上午",
+                "SeqNo": "6",
+                "convenience": 0
+              }
+            }
+          },
+          "195": {
+            "deptId": "0",
+            "deptName": "生殖内分泌特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "96",
+            "ParentId": "6",
+            "period": "上午",
+            "SeqNo": "7",
+            "convenience": 0,
+            "tree2": {
+              "30": {
+                "deptId": "0",
+                "deptName": "复发性流产门诊",
+                "LabelId": "5",
+                "districtCode": "1",
+                "treeID": "97",
+                "ParentId": "96",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "52": {
+                "deptId": "0",
+                "deptName": "更年期门诊",
+                "LabelId": "26",
+                "districtCode": "1",
+                "treeID": "99",
+                "ParentId": "96",
+                "period": "上午",
+                "SeqNo": "2",
+                "convenience": 0
+              },
+              "104": {
+                "deptId": "0",
+                "deptName": "监测排卵综合管理",
+                "LabelId": "25",
+                "districtCode": "1",
+                "treeID": "101",
+                "ParentId": "96",
+                "period": "上午",
+                "SeqNo": "4",
+                "convenience": 0
+              },
+              "145": {
+                "deptId": "0",
+                "deptName": "多囊卵巢综合征门诊",
+                "LabelId": "42",
+                "districtCode": "1",
+                "treeID": "205",
+                "ParentId": "96",
+                "period": "上午",
+                "SeqNo": "5",
+                "convenience": 0
+              },
+              "165": {
+                "deptId": "0",
+                "deptName": "计划生育门诊",
+                "LabelId": "47",
+                "districtCode": "1",
+                "treeID": "227",
+                "ParentId": "96",
+                "period": "上午",
+                "SeqNo": "6",
+                "convenience": 0
+              }
+            }
+          },
+          "205": {
+            "deptId": "0",
+            "deptName": "生殖医学（不孕不育及试管婴儿）特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "103",
+            "ParentId": "6",
+            "period": "上午",
+            "SeqNo": "8",
+            "convenience": 0,
+            "tree2": {
+              "2": {
+                "deptId": "0",
+                "deptName": "复发性流产门诊",
+                "LabelId": "5",
+                "districtCode": "1",
+                "treeID": "104",
+                "ParentId": "103",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "95": {
+                "deptId": "0",
+                "deptName": "多囊卵巢综合征门诊",
+                "LabelId": "42",
+                "districtCode": "1",
+                "treeID": "207",
+                "ParentId": "103",
+                "period": "上午",
+                "SeqNo": "3",
+                "convenience": 0
+              },
+              "137": {
+                "deptId": "0",
+                "deptName": "生殖遗传门诊",
+                "LabelId": "64",
+                "districtCode": "1",
+                "treeID": "334",
+                "ParentId": "103",
+                "period": "上午",
+                "SeqNo": "5",
+                "convenience": 0
+              },
+              "154": {
+                "deptId": "0",
+                "deptName": "生育力保存门诊",
+                "LabelId": "65",
+                "districtCode": "1",
+                "treeID": "335",
+                "ParentId": "103",
+                "period": "上午",
+                "SeqNo": "6",
+                "convenience": 0
+              },
+              "191": {
+                "deptId": "0",
+                "deptName": "孕前保健门诊",
+                "LabelId": "73",
+                "districtCode": "1",
+                "treeID": "351",
+                "ParentId": "103",
+                "period": "上午",
+                "SeqNo": "7",
+                "convenience": 0
+              }
+            }
+          }
+        }
+      },
+      "132": {
+        "deptId": "0",
+        "deptName": "生殖男科门诊",
+        "LabelId": "0",
+        "districtCode": "1",
+        "treeID": "223",
+        "ParentId": "1",
+        "period": "上午",
+        "SeqNo": "5",
+        "convenience": 0,
+        "tree": {
+          "31": {
+            "deptId": "1156",
+            "deptName": "生殖男科门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "224",
+            "ParentId": "223",
+            "period": "上午",
+            "SeqNo": "1",
+            "convenience": 0
+          },
+          "53": {
+            "deptId": "0",
+            "deptName": "生殖男科特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "241",
+            "ParentId": "223",
+            "period": "上午",
+            "SeqNo": "2",
+            "convenience": 0,
+            "tree2": {
+              "3": {
+                "deptId": "0",
+                "deptName": "睾丸发育不良/无精症门诊",
+                "LabelId": "46",
+                "districtCode": "1",
+                "treeID": "242",
+                "ParentId": "241",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "64": {
+                "deptId": "0",
+                "deptName": "孕前保健门诊",
+                "LabelId": "73",
+                "districtCode": "1",
+                "treeID": "352",
+                "ParentId": "241",
+                "period": "上午",
+                "SeqNo": "2",
+                "convenience": 0
+              },
+              "85": {
+                "deptId": "0",
+                "deptName": "育前保健门诊(男)",
+                "LabelId": "83",
+                "districtCode": "2",
+                "treeID": "395",
+                "ParentId": "241",
+                "period": "上午",
+                "SeqNo": "3",
+                "convenience": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "锦江院区": {
+      "29": {
+        "deptId": "0",
+        "deptName": "儿科门诊",
+        "LabelId": "0",
+        "districtCode": "1",
+        "treeID": "40",
+        "ParentId": "2",
+        "period": "上午",
+        "SeqNo": "1",
+        "convenience": 0,
+        "tree": {
+          "18": {
+            "deptId": "1341",
+            "deptName": "儿科门诊(内科)",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "41",
+            "ParentId": "40",
+            "period": "上午",
+            "SeqNo": "1",
+            "convenience": 0
+          },
+          "43": {
+            "deptId": "1610",
+            "deptName": "小儿外科门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "42",
+            "ParentId": "40",
+            "period": "上午",
+            "SeqNo": "2",
+            "convenience": 0
+          },
+          "97": {
+            "deptId": "1389",
+            "deptName": "儿童康复门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "43",
+            "ParentId": "40",
+            "period": "上午",
+            "SeqNo": "3",
+            "convenience": 0
+          },
+          "115": {
+            "deptId": "0",
+            "deptName": "儿童特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "44",
+            "ParentId": "40",
+            "period": "上午",
+            "SeqNo": "4",
+            "convenience": 0,
+            "tree2": {
+              "12": {
+                "deptId": "0",
+                "deptName": "儿童夜遗尿及排尿功能障碍专病门诊",
+                "LabelId": "1",
+                "districtCode": "2",
+                "treeID": "45",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "71": {
+                "deptId": "0",
+                "deptName": "儿童哮喘专病门诊",
+                "LabelId": "2",
+                "districtCode": "2",
+                "treeID": "82",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "2",
+                "convenience": 0
+              },
+              "91": {
+                "deptId": "0",
+                "deptName": "儿童结核病门诊",
+                "LabelId": "3",
+                "districtCode": "2",
+                "treeID": "84",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "3",
+                "convenience": 0
+              },
+              "109": {
+                "deptId": "0",
+                "deptName": "儿童癫痫门诊",
+                "LabelId": "28",
+                "districtCode": "2",
+                "treeID": "89",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "4",
+                "convenience": 0
+              },
+              "170": {
+                "deptId": "0",
+                "deptName": "儿童多动症专病门诊",
+                "LabelId": "34",
+                "districtCode": "2",
+                "treeID": "98",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "6",
+                "convenience": 0
+              },
+              "184": {
+                "deptId": "0",
+                "deptName": "儿童语言专病门诊",
+                "LabelId": "30",
+                "districtCode": "2",
+                "treeID": "106",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "7",
+                "convenience": 0
+              },
+              "213": {
+                "deptId": "0",
+                "deptName": "儿童过敏门诊",
+                "LabelId": "35",
+                "districtCode": "2",
+                "treeID": "107",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "8",
+                "convenience": 0
+              },
+              "223": {
+                "deptId": "0",
+                "deptName": "高危早产儿随访门诊",
+                "LabelId": "11",
+                "districtCode": "2",
+                "treeID": "108",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "9",
+                "convenience": 0
+              },
+              "233": {
+                "deptId": "0",
+                "deptName": "早产儿营养及早期综合发展门诊",
+                "LabelId": "10",
+                "districtCode": "2",
+                "treeID": "109",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "10",
+                "convenience": 0
+              },
+              "256": {
+                "deptId": "0",
+                "deptName": "儿童矮小症门诊",
+                "LabelId": "39",
+                "districtCode": "2",
+                "treeID": "110",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "11",
+                "convenience": 0
+              },
+              "266": {
+                "deptId": "0",
+                "deptName": "儿童性早熟门诊",
+                "LabelId": "40",
+                "districtCode": "2",
+                "treeID": "111",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "12",
+                "convenience": 0
+              },
+              "273": {
+                "deptId": "0",
+                "deptName": "儿童代谢性疾病门诊",
+                "LabelId": "41",
+                "districtCode": "2",
+                "treeID": "112",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "13",
+                "convenience": 0
+              },
+              "290": {
+                "deptId": "0",
+                "deptName": "儿童遗传代谢内分泌门诊",
+                "LabelId": "29",
+                "districtCode": "2",
+                "treeID": "95",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "14",
+                "convenience": 0
+              },
+              "294": {
+                "deptId": "0",
+                "deptName": "儿童糖尿病护理门诊",
+                "LabelId": "54",
+                "districtCode": "2",
+                "treeID": "261",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "15",
+                "convenience": 0
+              },
+              "300": {
+                "deptId": "2013",
+                "deptName": "小儿遗传代谢内分泌科方便门诊",
+                "LabelId": "0",
+                "districtCode": "2",
+                "treeID": "402",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "16",
+                "convenience": 0
+              },
+              "306": {
+                "deptId": "0",
+                "deptName": "喂养困难特色门诊",
+                "LabelId": "50",
+                "districtCode": "2",
+                "treeID": "253",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "17",
+                "convenience": 0
+              },
+              "321": {
+                "deptId": "0",
+                "deptName": "胎儿心血管疾病特色门诊",
+                "LabelId": "52",
+                "districtCode": "2",
+                "treeID": "257",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "18",
+                "convenience": 0
+              },
+              "325": {
+                "deptId": "0",
+                "deptName": "神经发育特色门诊",
+                "LabelId": "53",
+                "districtCode": "2",
+                "treeID": "267",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "20",
+                "convenience": 0
+              },
+              "332": {
+                "deptId": "0",
+                "deptName": "儿童实体肿瘤门诊",
+                "LabelId": "56",
+                "districtCode": "2",
+                "treeID": "315",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "21",
+                "convenience": 0
+              },
+              "333": {
+                "deptId": "0",
+                "deptName": "造血干细胞移植门诊",
+                "LabelId": "57",
+                "districtCode": "2",
+                "treeID": "316",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "22",
+                "convenience": 0
+              },
+              "337": {
+                "deptId": "0",
+                "deptName": "儿童晕厥门诊",
+                "LabelId": "58",
+                "districtCode": "2",
+                "treeID": "317",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "23",
+                "convenience": 0
+              },
+              "344": {
+                "deptId": "0",
+                "deptName": "儿童血管瘤门诊",
+                "LabelId": "59",
+                "districtCode": "2",
+                "treeID": "318",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "24",
+                "convenience": 0
+              },
+              "345": {
+                "deptId": "0",
+                "deptName": "新生儿疾病筛查门诊",
+                "LabelId": "60",
+                "districtCode": "2",
+                "treeID": "319",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "25",
+                "convenience": 0
+              },
+              "349": {
+                "deptId": "0",
+                "deptName": "儿童血液肿瘤护理管理门诊（护理）",
+                "LabelId": "67",
+                "districtCode": "2",
+                "treeID": "320",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "26",
+                "convenience": 0
+              },
+              "356": {
+                "deptId": "0",
+                "deptName": "高危新生儿及早产儿医护一体化门诊（护理）",
+                "LabelId": "70",
+                "districtCode": "2",
+                "treeID": "321",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "27",
+                "convenience": 0
+              },
+              "361": {
+                "deptId": "0",
+                "deptName": "儿童PICC随访管理门诊（护理）",
+                "LabelId": "9",
+                "districtCode": "2",
+                "treeID": "113",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "32",
+                "convenience": 0
+              },
+              "362": {
+                "deptId": "0",
+                "deptName": "儿童肝病门诊",
+                "LabelId": "44",
+                "districtCode": "2",
+                "treeID": "214",
+                "ParentId": "44",
+                "period": "上午",
+                "SeqNo": "33",
+                "convenience": 0
+              }
+            }
+          },
+          "131": {
+            "deptId": "1883",
+            "deptName": "儿童口腔治疗门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "234",
+            "ParentId": "40",
+            "period": "上午",
+            "SeqNo": "5",
+            "convenience": 0
+          },
+          "174": {
+            "deptId": "1897",
+            "deptName": "儿童口腔健康保健门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "235",
+            "ParentId": "40",
+            "period": "上午",
+            "SeqNo": "6",
+            "convenience": 0
+          },
+          "187": {
+            "deptId": "1884",
+            "deptName": "儿科中医门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "236",
+            "ParentId": "40",
+            "period": "上午",
+            "SeqNo": "7",
+            "convenience": 0
+          },
+          "200": {
+            "deptId": "1988",
+            "deptName": "儿童心理门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "272",
+            "ParentId": "40",
+            "period": "上午",
+            "SeqNo": "8",
+            "convenience": 0
+          },
+          "226": {
+            "deptId": "1987",
+            "deptName": "儿童皮肤门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "274",
+            "ParentId": "40",
+            "period": "上午",
+            "SeqNo": "9",
+            "convenience": 0
+          },
+          "236": {
+            "deptId": "1986",
+            "deptName": "儿童耳鼻喉门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "275",
+            "ParentId": "40",
+            "period": "上午",
+            "SeqNo": "10",
+            "convenience": 0
+          },
+          "245": {
+            "deptId": "2006",
+            "deptName": "儿童神经外科门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "276",
+            "ParentId": "40",
+            "period": "上午",
+            "SeqNo": "11",
+            "convenience": 0
+          },
+          "268": {
+            "deptId": "2015",
+            "deptName": "儿童中医康复治疗门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "343",
+            "ParentId": "40",
+            "period": "上午",
+            "SeqNo": "12",
+            "convenience": 0
+          }
+        }
+      },
+      "51": {
+        "deptId": "0",
+        "deptName": "妇产科门诊",
+        "LabelId": "0",
+        "districtCode": "1",
+        "treeID": "114",
+        "ParentId": "2",
+        "period": "上午",
+        "SeqNo": "2",
+        "convenience": 0,
+        "tree": {
+          "13": {
+            "deptId": "1346",
+            "deptName": "妇科门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "115",
+            "ParentId": "114",
+            "period": "上午",
+            "SeqNo": "1",
+            "convenience": 0
+          },
+          "72": {
+            "deptId": "1595",
+            "deptName": "妇科肿瘤放化疗门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "116",
+            "ParentId": "114",
+            "period": "上午",
+            "SeqNo": "2",
+            "convenience": 0
+          },
+          "92": {
+            "deptId": "0",
+            "deptName": "孕前保健门诊(女)",
+            "LabelId": "82",
+            "districtCode": "2",
+            "treeID": "394",
+            "ParentId": "114",
+            "period": "上午",
+            "SeqNo": "3",
+            "convenience": 0
+          },
+          "110": {
+            "deptId": "1336",
+            "deptName": "产科门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "117",
+            "ParentId": "114",
+            "period": "上午",
+            "SeqNo": "4",
+            "convenience": 0
+          },
+          "151": {
+            "deptId": "0",
+            "deptName": "医学遗传科/产前诊断中心门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "371",
+            "ParentId": "114",
+            "period": "上午",
+            "SeqNo": "5",
+            "convenience": 0,
+            "tree2": {
+              "41": {
+                "deptId": "1992",
+                "deptName": "优生/遗传/产前诊断门诊",
+                "LabelId": "0",
+                "districtCode": "2",
+                "treeID": "372",
+                "ParentId": "371",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              }
+            }
+          },
+          "171": {
+            "deptId": "0",
+            "deptName": "不孕症门诊",
+            "LabelId": "69",
+            "districtCode": "2",
+            "treeID": "282",
+            "ParentId": "114",
+            "period": "上午",
+            "SeqNo": "6",
+            "convenience": 0
+          },
+          "185": {
+            "deptId": "1376",
+            "deptName": "生殖内分泌门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "119",
+            "ParentId": "114",
+            "period": "上午",
+            "SeqNo": "7",
+            "convenience": 0
+          },
+          "214": {
+            "deptId": "1932",
+            "deptName": "辅助助孕门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "120",
+            "ParentId": "114",
+            "period": "上午",
+            "SeqNo": "8",
+            "convenience": 0
+          },
+          "224": {
+            "deptId": "0",
+            "deptName": "妇科特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "121",
+            "ParentId": "114",
+            "period": "上午",
+            "SeqNo": "9",
+            "convenience": 0,
+            "tree2": {
+              "8": {
+                "deptId": "0",
+                "deptName": "阴道镜门诊",
+                "LabelId": "16",
+                "districtCode": "2",
+                "treeID": "122",
+                "ParentId": "121",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "68": {
+                "deptId": "0",
+                "deptName": "盆底疾病与康复专病门诊",
+                "LabelId": "7",
+                "districtCode": "2",
+                "treeID": "123",
+                "ParentId": "121",
+                "period": "上午",
+                "SeqNo": "2",
+                "convenience": 0
+              },
+              "89": {
+                "deptId": "0",
+                "deptName": "妇科术后复查门诊",
+                "LabelId": "18",
+                "districtCode": "2",
+                "treeID": "124",
+                "ParentId": "121",
+                "period": "上午",
+                "SeqNo": "3",
+                "convenience": 0
+              },
+              "105": {
+                "deptId": "0",
+                "deptName": "盆底康复门诊",
+                "LabelId": "17",
+                "districtCode": "2",
+                "treeID": "125",
+                "ParentId": "121",
+                "period": "上午",
+                "SeqNo": "4",
+                "convenience": 0
+              },
+              "146": {
+                "deptId": "0",
+                "deptName": "PAC/避孕咨询门诊（护理）",
+                "LabelId": "8",
+                "districtCode": "2",
+                "treeID": "126",
+                "ParentId": "121",
+                "period": "上午",
+                "SeqNo": "5",
+                "convenience": 0
+              },
+              "166": {
+                "deptId": "0",
+                "deptName": "成人PICC随访管理门诊（护理）",
+                "LabelId": "13",
+                "districtCode": "2",
+                "treeID": "127",
+                "ParentId": "121",
+                "period": "上午",
+                "SeqNo": "6",
+                "convenience": 0
+              },
+              "181": {
+                "deptId": "0",
+                "deptName": "妇科疾病全程管理咨询门诊（护理）",
+                "LabelId": "31",
+                "districtCode": "2",
+                "treeID": "128",
+                "ParentId": "121",
+                "period": "上午",
+                "SeqNo": "7",
+                "convenience": 0
+              },
+              "211": {
+                "deptId": "0",
+                "deptName": "伤口治疗门诊（护理）",
+                "LabelId": "33",
+                "districtCode": "2",
+                "treeID": "129",
+                "ParentId": "121",
+                "period": "上午",
+                "SeqNo": "8",
+                "convenience": 0
+              },
+              "221": {
+                "deptId": "0",
+                "deptName": "女性性医学门诊",
+                "LabelId": "45",
+                "districtCode": "2",
+                "treeID": "216",
+                "ParentId": "121",
+                "period": "上午",
+                "SeqNo": "9",
+                "convenience": 0
+              },
+              "231": {
+                "deptId": "0",
+                "deptName": "妇科泌尿门诊",
+                "LabelId": "55",
+                "districtCode": "2",
+                "treeID": "270",
+                "ParentId": "121",
+                "period": "上午",
+                "SeqNo": "10",
+                "convenience": 0
+              },
+              "254": {
+                "deptId": "0",
+                "deptName": "宫腔疾病专科门诊",
+                "LabelId": "61",
+                "districtCode": "2",
+                "treeID": "304",
+                "ParentId": "121",
+                "period": "上午",
+                "SeqNo": "11",
+                "convenience": 0
+              },
+              "264": {
+                "deptId": "0",
+                "deptName": "宫腔粘连/宫腔镜专病门诊",
+                "LabelId": "62",
+                "districtCode": "2",
+                "treeID": "305",
+                "ParentId": "121",
+                "period": "上午",
+                "SeqNo": "12",
+                "convenience": 0
+              },
+              "271": {
+                "deptId": "0",
+                "deptName": "青少年妇科/小儿妇科门诊",
+                "LabelId": "63",
+                "districtCode": "2",
+                "treeID": "306",
+                "ParentId": "121",
+                "period": "上午",
+                "SeqNo": "13",
+                "convenience": 0
+              },
+              "286": {
+                "deptId": "0",
+                "deptName": "子宫内膜异位症全程管理门诊",
+                "LabelId": "66",
+                "districtCode": "2",
+                "treeID": "307",
+                "ParentId": "121",
+                "period": "上午",
+                "SeqNo": "14",
+                "convenience": 0
+              },
+              "293": {
+                "deptId": "0",
+                "deptName": "妇科淋巴水肿护理门诊（护理）",
+                "LabelId": "68",
+                "districtCode": "2",
+                "treeID": "312",
+                "ParentId": "121",
+                "period": "上午",
+                "SeqNo": "15",
+                "convenience": 0
+              },
+              "298": {
+                "deptId": "0",
+                "deptName": "普通妇科专科门诊",
+                "LabelId": "79",
+                "districtCode": "2",
+                "treeID": "380",
+                "ParentId": "121",
+                "period": "上午",
+                "SeqNo": "16",
+                "convenience": 0
+              },
+              "312": {
+                "deptId": "0",
+                "deptName": "妇科肿瘤专科门诊",
+                "LabelId": "80",
+                "districtCode": "2",
+                "treeID": "381",
+                "ParentId": "121",
+                "period": "上午",
+                "SeqNo": "17",
+                "convenience": 0
+              },
+              "319": {
+                "deptId": "0",
+                "deptName": "宫颈疾病专科门诊",
+                "LabelId": "81",
+                "districtCode": "2",
+                "treeID": "382",
+                "ParentId": "121",
+                "period": "上午",
+                "SeqNo": "18",
+                "convenience": 0
+              }
+            }
+          },
+          "234": {
+            "deptId": "0",
+            "deptName": "妇科肿瘤放化疗特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "130",
+            "ParentId": "114",
+            "period": "上午",
+            "SeqNo": "10",
+            "convenience": 0,
+            "tree2": {
+              "39": {
+                "deptId": "0",
+                "deptName": "妇科肿瘤遗传咨询门诊",
+                "LabelId": "19",
+                "districtCode": "2",
+                "treeID": "131",
+                "ParentId": "130",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              }
+            }
+          },
+          "257": {
+            "deptId": "0",
+            "deptName": "产科特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "132",
+            "ParentId": "114",
+            "period": "上午",
+            "SeqNo": "11",
+            "convenience": 0,
+            "tree2": {
+              "60": {
+                "deptId": "0",
+                "deptName": "高龄孕产妇专科门诊",
+                "LabelId": "6",
+                "districtCode": "2",
+                "treeID": "133",
+                "ParentId": "132",
+                "period": "上午",
+                "SeqNo": "2",
+                "convenience": 0
+              },
+              "83": {
+                "deptId": "0",
+                "deptName": "自发性早产门诊",
+                "LabelId": "23",
+                "districtCode": "2",
+                "treeID": "134",
+                "ParentId": "132",
+                "period": "上午",
+                "SeqNo": "3",
+                "convenience": 0
+              },
+              "127": {
+                "deptId": "0",
+                "deptName": "胎儿医学门诊",
+                "LabelId": "24",
+                "districtCode": "2",
+                "treeID": "135",
+                "ParentId": "132",
+                "period": "上午",
+                "SeqNo": "4",
+                "convenience": 0
+              },
+              "142": {
+                "deptId": "0",
+                "deptName": "产后复查门诊",
+                "LabelId": "14",
+                "districtCode": "2",
+                "treeID": "136",
+                "ParentId": "132",
+                "period": "上午",
+                "SeqNo": "5",
+                "convenience": 0
+              },
+              "161": {
+                "deptId": "0",
+                "deptName": "母乳喂养门诊（护理）",
+                "LabelId": "15",
+                "districtCode": "2",
+                "treeID": "137",
+                "ParentId": "132",
+                "period": "上午",
+                "SeqNo": "6",
+                "convenience": 0
+              },
+              "197": {
+                "deptId": "0",
+                "deptName": "孕期营养与体重管理门诊(护理)",
+                "LabelId": "72",
+                "districtCode": "2",
+                "treeID": "363",
+                "ParentId": "132",
+                "period": "上午",
+                "SeqNo": "7",
+                "convenience": 0
+              },
+              "207": {
+                "deptId": "0",
+                "deptName": "宫颈机能不全与早产门诊",
+                "LabelId": "74",
+                "districtCode": "2",
+                "treeID": "364",
+                "ParentId": "132",
+                "period": "上午",
+                "SeqNo": "8",
+                "convenience": 0
+              },
+              "217": {
+                "deptId": "0",
+                "deptName": "妊娠期高血压疾病专科门诊",
+                "LabelId": "75",
+                "districtCode": "2",
+                "treeID": "365",
+                "ParentId": "132",
+                "period": "上午",
+                "SeqNo": "9",
+                "convenience": 0
+              },
+              "242": {
+                "deptId": "0",
+                "deptName": "妊娠并发症专科门诊",
+                "LabelId": "76",
+                "districtCode": "2",
+                "treeID": "366",
+                "ParentId": "132",
+                "period": "上午",
+                "SeqNo": "10",
+                "convenience": 0
+              },
+              "250": {
+                "deptId": "0",
+                "deptName": "胎盘疾病专科门诊",
+                "LabelId": "77",
+                "districtCode": "2",
+                "treeID": "367",
+                "ParentId": "132",
+                "period": "上午",
+                "SeqNo": "11",
+                "convenience": 0
+              },
+              "260": {
+                "deptId": "0",
+                "deptName": "双胎门诊",
+                "LabelId": "78",
+                "districtCode": "2",
+                "treeID": "368",
+                "ParentId": "132",
+                "period": "上午",
+                "SeqNo": "12",
+                "convenience": 0
+              }
+            }
+          },
+          "267": {
+            "deptId": "0",
+            "deptName": "生殖内分泌特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "139",
+            "ParentId": "114",
+            "period": "上午",
+            "SeqNo": "12",
+            "convenience": 0,
+            "tree2": {
+              "37": {
+                "deptId": "0",
+                "deptName": "复发性流产门诊",
+                "LabelId": "5",
+                "districtCode": "2",
+                "treeID": "140",
+                "ParentId": "139",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "58": {
+                "deptId": "0",
+                "deptName": "更年期门诊",
+                "LabelId": "26",
+                "districtCode": "2",
+                "treeID": "141",
+                "ParentId": "139",
+                "period": "上午",
+                "SeqNo": "2",
+                "convenience": 0
+              },
+              "107": {
+                "deptId": "0",
+                "deptName": "监测排卵综合管理",
+                "LabelId": "25",
+                "districtCode": "2",
+                "treeID": "143",
+                "ParentId": "139",
+                "period": "上午",
+                "SeqNo": "4",
+                "convenience": 0
+              },
+              "148": {
+                "deptId": "0",
+                "deptName": "计划生育门诊",
+                "LabelId": "47",
+                "districtCode": "2",
+                "treeID": "225",
+                "ParentId": "139",
+                "period": "上午",
+                "SeqNo": "5",
+                "convenience": 0
+              }
+            }
+          },
+          "274": {
+            "deptId": "0",
+            "deptName": "生殖医学（不孕不育及试管婴儿）特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "144",
+            "ParentId": "114",
+            "period": "上午",
+            "SeqNo": "13",
+            "convenience": 0,
+            "tree2": {
+              "20": {
+                "deptId": "0",
+                "deptName": "复发性流产门诊",
+                "LabelId": "5",
+                "districtCode": "2",
+                "treeID": "145",
+                "ParentId": "144",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "106": {
+                "deptId": "0",
+                "deptName": "生殖遗传门诊",
+                "LabelId": "64",
+                "districtCode": "2",
+                "treeID": "308",
+                "ParentId": "144",
+                "period": "上午",
+                "SeqNo": "4",
+                "convenience": 0
+              },
+              "147": {
+                "deptId": "0",
+                "deptName": "生育力保存门诊",
+                "LabelId": "65",
+                "districtCode": "2",
+                "treeID": "309",
+                "ParentId": "144",
+                "period": "上午",
+                "SeqNo": "5",
+                "convenience": 0
+              },
+              "167": {
+                "deptId": "0",
+                "deptName": "多囊卵巢综合征门诊",
+                "LabelId": "42",
+                "districtCode": "2",
+                "treeID": "311",
+                "ParentId": "144",
+                "period": "上午",
+                "SeqNo": "6",
+                "convenience": 0
+              },
+              "182": {
+                "deptId": "0",
+                "deptName": "子宫内膜异位症全程管理门诊",
+                "LabelId": "66",
+                "districtCode": "2",
+                "treeID": "349",
+                "ParentId": "144",
+                "period": "上午",
+                "SeqNo": "7",
+                "convenience": 0
+              },
+              "369": {
+                "deptId": "0",
+                "deptName": "孕前保健门诊(停)",
+                "LabelId": "73",
+                "districtCode": "2",
+                "treeID": "353",
+                "ParentId": "144",
+                "period": "上午",
+                "SeqNo": "99",
+                "convenience": 0
+              }
+            }
+          },
+          "289": {
+            "deptId": "1885",
+            "deptName": "妇产科中医门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "237",
+            "ParentId": "114",
+            "period": "上午",
+            "SeqNo": "14",
+            "convenience": 0
+          },
+          "295": {
+            "deptId": "1933",
+            "deptName": "产后复查门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "264",
+            "ParentId": "114",
+            "period": "上午",
+            "SeqNo": "15",
+            "convenience": 0
+          }
+        }
+      },
+      "76": {
+        "deptId": "0",
+        "deptName": "特需门诊（有妇、产、儿、生殖等科）",
+        "LabelId": "0",
+        "districtCode": "1",
+        "treeID": "147",
+        "ParentId": "2",
+        "period": "上午",
+        "SeqNo": "3",
+        "convenience": 0,
+        "tree": {
+          "17": {
+            "deptId": "1381",
+            "deptName": "特需儿科门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "148",
+            "ParentId": "147",
+            "period": "上午",
+            "SeqNo": "1",
+            "convenience": 0
+          },
+          "42": {
+            "deptId": "1382",
+            "deptName": "特需妇科门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "149",
+            "ParentId": "147",
+            "period": "上午",
+            "SeqNo": "2",
+            "convenience": 0
+          },
+          "96": {
+            "deptId": "1383",
+            "deptName": "特需产科门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "150",
+            "ParentId": "147",
+            "period": "上午",
+            "SeqNo": "3",
+            "convenience": 0
+          },
+          "114": {
+            "deptId": "1472",
+            "deptName": "特需生殖内分泌门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "151",
+            "ParentId": "147",
+            "period": "上午",
+            "SeqNo": "4",
+            "convenience": 0
+          },
+          "130": {
+            "deptId": "1384",
+            "deptName": "特需生殖医学科（IVF）门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "152",
+            "ParentId": "147",
+            "period": "上午",
+            "SeqNo": "5",
+            "convenience": 0
+          },
+          "173": {
+            "deptId": "2009",
+            "deptName": "特需医学遗传科门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "153",
+            "ParentId": "147",
+            "period": "上午",
+            "SeqNo": "6",
+            "convenience": 0
+          },
+          "186": {
+            "deptId": "1896",
+            "deptName": "特需生殖男科门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "233",
+            "ParentId": "147",
+            "period": "上午",
+            "SeqNo": "7",
+            "convenience": 0
+          },
+          "199": {
+            "deptId": "1901",
+            "deptName": "特需儿科中医门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "239",
+            "ParentId": "147",
+            "period": "上午",
+            "SeqNo": "8",
+            "convenience": 0
+          },
+          "225": {
+            "deptId": "1902",
+            "deptName": "特需妇科中医门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "240",
+            "ParentId": "147",
+            "period": "上午",
+            "SeqNo": "9",
+            "convenience": 0
+          },
+          "235": {
+            "deptId": "2005",
+            "deptName": "特需儿童心理门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "273",
+            "ParentId": "147",
+            "period": "上午",
+            "SeqNo": "10",
+            "convenience": 0
+          },
+          "a": {
+            "deptId": "a",
+            "deptName": "特需产后修复科"
+          },
+          "b": {
+            "deptId": "b",
+            "deptName": "特需整形美容科"
+          },
+          "c": {
+            "deptId": "c",
+            "deptName": "特需性功能科"
+          }
+        }
+      },
+      "122": {
+        "deptId": "0",
+        "deptName": "生殖男科门诊",
+        "LabelId": "0",
+        "districtCode": "1",
+        "treeID": "154",
+        "ParentId": "2",
+        "period": "上午",
+        "SeqNo": "4",
+        "convenience": 0,
+        "tree": {
+          "40": {
+            "deptId": "1380",
+            "deptName": "生殖男科门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "155",
+            "ParentId": "154",
+            "period": "上午",
+            "SeqNo": "1",
+            "convenience": 0
+          },
+          "61": {
+            "deptId": "0",
+            "deptName": "生殖男科特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "219",
+            "ParentId": "154",
+            "period": "上午",
+            "SeqNo": "2",
+            "convenience": 0,
+            "tree2": {
+              "33": {
+                "deptId": "0",
+                "deptName": "睾丸发育不良/无精症门诊",
+                "LabelId": "46",
+                "districtCode": "2",
+                "treeID": "220",
+                "ParentId": "219",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "88": {
+                "deptId": "0",
+                "deptName": "育前保健门诊(男)",
+                "LabelId": "83",
+                "districtCode": "2",
+                "treeID": "399",
+                "ParentId": "219",
+                "period": "上午",
+                "SeqNo": "3",
+                "convenience": 0
+              }
+            }
+          }
+        }
+      },
+      "139": {
+        "deptId": "0",
+        "deptName": "特色门诊",
+        "LabelId": "0",
+        "districtCode": "1",
+        "treeID": "156",
+        "ParentId": "2",
+        "period": "上午",
+        "SeqNo": "5",
+        "convenience": 0,
+        "tree": {
+          "11": {
+            "deptId": "1388",
+            "deptName": "临床营养门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "157",
+            "ParentId": "156",
+            "period": "上午",
+            "SeqNo": "1",
+            "convenience": 0
+          },
+          "70": {
+            "deptId": "0",
+            "deptName": "麻醉门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "158",
+            "ParentId": "156",
+            "period": "上午",
+            "SeqNo": "2",
+            "convenience": 0,
+            "tree2": {
+              "21": {
+                "deptId": "1471",
+                "deptName": "麻醉门诊",
+                "LabelId": "0",
+                "districtCode": "2",
+                "treeID": "347",
+                "ParentId": "158",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "45": {
+                "deptId": "0",
+                "deptName": "分娩镇痛门诊",
+                "LabelId": "71",
+                "districtCode": "2",
+                "treeID": "348",
+                "ParentId": "158",
+                "period": "上午",
+                "SeqNo": "2",
+                "convenience": 0
+              }
+            }
+          },
+          "90": {
+            "deptId": "1390",
+            "deptName": "心理咨询门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "159",
+            "ParentId": "156",
+            "period": "上午",
+            "SeqNo": "3",
+            "convenience": 0
+          },
+          "108": {
+            "deptId": "0",
+            "deptName": "儿科特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "160",
+            "ParentId": "156",
+            "period": "上午",
+            "SeqNo": "4",
+            "convenience": 0,
+            "tree2": {
+              "32": {
+                "deptId": "0",
+                "deptName": "儿童夜遗尿及排尿功能障碍专病门诊",
+                "LabelId": "1",
+                "districtCode": "2",
+                "treeID": "161",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "54": {
+                "deptId": "0",
+                "deptName": "儿童哮喘专病门诊",
+                "LabelId": "2",
+                "districtCode": "2",
+                "treeID": "162",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "2",
+                "convenience": 0
+              },
+              "77": {
+                "deptId": "0",
+                "deptName": "儿童结核病门诊",
+                "LabelId": "3",
+                "districtCode": "2",
+                "treeID": "163",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "3",
+                "convenience": 0
+              },
+              "123": {
+                "deptId": "0",
+                "deptName": "儿童癫痫门诊",
+                "LabelId": "28",
+                "districtCode": "2",
+                "treeID": "164",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "4",
+                "convenience": 0
+              },
+              "157": {
+                "deptId": "0",
+                "deptName": "儿童多动症专病门诊",
+                "LabelId": "34",
+                "districtCode": "2",
+                "treeID": "166",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "6",
+                "convenience": 0
+              },
+              "194": {
+                "deptId": "0",
+                "deptName": "儿童语言专病门诊",
+                "LabelId": "30",
+                "districtCode": "2",
+                "treeID": "167",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "7",
+                "convenience": 0
+              },
+              "204": {
+                "deptId": "0",
+                "deptName": "儿童过敏门诊",
+                "LabelId": "35",
+                "districtCode": "2",
+                "treeID": "168",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "8",
+                "convenience": 0
+              },
+              "215": {
+                "deptId": "0",
+                "deptName": "高危早产儿随访门诊",
+                "LabelId": "11",
+                "districtCode": "2",
+                "treeID": "169",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "9",
+                "convenience": 0
+              },
+              "240": {
+                "deptId": "0",
+                "deptName": "早产儿营养及早期综合发展门诊",
+                "LabelId": "10",
+                "districtCode": "2",
+                "treeID": "170",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "10",
+                "convenience": 0
+              },
+              "248": {
+                "deptId": "0",
+                "deptName": "儿童矮小症门诊",
+                "LabelId": "39",
+                "districtCode": "2",
+                "treeID": "171",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "11",
+                "convenience": 0
+              },
+              "258": {
+                "deptId": "0",
+                "deptName": "儿童性早熟门诊",
+                "LabelId": "40",
+                "districtCode": "2",
+                "treeID": "172",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "12",
+                "convenience": 0
+              },
+              "276": {
+                "deptId": "0",
+                "deptName": "儿童代谢性疾病门诊",
+                "LabelId": "41",
+                "districtCode": "2",
+                "treeID": "173",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "13",
+                "convenience": 0
+              },
+              "282": {
+                "deptId": "0",
+                "deptName": "儿童遗传代谢内分泌门诊",
+                "LabelId": "29",
+                "districtCode": "2",
+                "treeID": "165",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "14",
+                "convenience": 0
+              },
+              "297": {
+                "deptId": "0",
+                "deptName": "儿童糖尿病护理门诊",
+                "LabelId": "54",
+                "districtCode": "1",
+                "treeID": "263",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "15",
+                "convenience": 0
+              },
+              "304": {
+                "deptId": "2013",
+                "deptName": "小儿遗传代谢内分泌科方便门诊",
+                "LabelId": "0",
+                "districtCode": "2",
+                "treeID": "403",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "16",
+                "convenience": 0
+              },
+              "311": {
+                "deptId": "0",
+                "deptName": "喂养困难特色门诊",
+                "LabelId": "50",
+                "districtCode": "2",
+                "treeID": "254",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "17",
+                "convenience": 0
+              },
+              "318": {
+                "deptId": "0",
+                "deptName": "胎儿心血管疾病特色门诊",
+                "LabelId": "52",
+                "districtCode": "2",
+                "treeID": "258",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "18",
+                "convenience": 0
+              },
+              "328": {
+                "deptId": "0",
+                "deptName": "神经发育特色门诊",
+                "LabelId": "53",
+                "districtCode": "2",
+                "treeID": "266",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "20",
+                "convenience": 0
+              },
+              "331": {
+                "deptId": "0",
+                "deptName": "儿童实体肿瘤门诊",
+                "LabelId": "56",
+                "districtCode": "2",
+                "treeID": "299",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "21",
+                "convenience": 0
+              },
+              "336": {
+                "deptId": "0",
+                "deptName": "造血干细胞移植门诊",
+                "LabelId": "57",
+                "districtCode": "2",
+                "treeID": "300",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "22",
+                "convenience": 0
+              },
+              "340": {
+                "deptId": "0",
+                "deptName": "儿童晕厥门诊",
+                "LabelId": "58",
+                "districtCode": "2",
+                "treeID": "301",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "23",
+                "convenience": 0
+              },
+              "343": {
+                "deptId": "0",
+                "deptName": "儿童血管瘤门诊",
+                "LabelId": "59",
+                "districtCode": "2",
+                "treeID": "302",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "24",
+                "convenience": 0
+              },
+              "348": {
+                "deptId": "0",
+                "deptName": "新生儿疾病筛查门诊",
+                "LabelId": "60",
+                "districtCode": "2",
+                "treeID": "303",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "25",
+                "convenience": 0
+              },
+              "352": {
+                "deptId": "0",
+                "deptName": "儿童血液肿瘤护理管理门诊（护理）",
+                "LabelId": "67",
+                "districtCode": "2",
+                "treeID": "313",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "26",
+                "convenience": 0
+              },
+              "355": {
+                "deptId": "0",
+                "deptName": "高危新生儿及早产儿医护一体化门诊（护理）",
+                "LabelId": "70",
+                "districtCode": "2",
+                "treeID": "314",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "27",
+                "convenience": 0
+              },
+              "360": {
+                "deptId": "0",
+                "deptName": "儿童PICC随访管理门诊（护理）",
+                "LabelId": "9",
+                "districtCode": "2",
+                "treeID": "174",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "32",
+                "convenience": 0
+              },
+              "363": {
+                "deptId": "0",
+                "deptName": "儿童肝病门诊",
+                "LabelId": "44",
+                "districtCode": "2",
+                "treeID": "217",
+                "ParentId": "160",
+                "period": "上午",
+                "SeqNo": "33",
+                "convenience": 0
+              }
+            }
+          },
+          "150": {
+            "deptId": "0",
+            "deptName": "妇科特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "175",
+            "ParentId": "156",
+            "period": "上午",
+            "SeqNo": "5",
+            "convenience": 0,
+            "tree2": {
+              "22": {
+                "deptId": "0",
+                "deptName": "阴道镜门诊",
+                "LabelId": "16",
+                "districtCode": "2",
+                "treeID": "176",
+                "ParentId": "175",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "46": {
+                "deptId": "0",
+                "deptName": "盆底疾病与康复专病门诊",
+                "LabelId": "7",
+                "districtCode": "2",
+                "treeID": "177",
+                "ParentId": "175",
+                "period": "上午",
+                "SeqNo": "2",
+                "convenience": 0
+              },
+              "99": {
+                "deptId": "0",
+                "deptName": "妇科术后复查门诊",
+                "LabelId": "18",
+                "districtCode": "2",
+                "treeID": "178",
+                "ParentId": "175",
+                "period": "上午",
+                "SeqNo": "3",
+                "convenience": 0
+              },
+              "117": {
+                "deptId": "0",
+                "deptName": "盆底康复门诊",
+                "LabelId": "17",
+                "districtCode": "2",
+                "treeID": "179",
+                "ParentId": "175",
+                "period": "上午",
+                "SeqNo": "4",
+                "convenience": 0
+              },
+              "133": {
+                "deptId": "0",
+                "deptName": "PAC/避孕咨询门诊（护理）",
+                "LabelId": "8",
+                "districtCode": "2",
+                "treeID": "180",
+                "ParentId": "175",
+                "period": "上午",
+                "SeqNo": "5",
+                "convenience": 0
+              },
+              "175": {
+                "deptId": "0",
+                "deptName": "成人PICC随访管理门诊（护理）",
+                "LabelId": "13",
+                "districtCode": "2",
+                "treeID": "181",
+                "ParentId": "175",
+                "period": "上午",
+                "SeqNo": "6",
+                "convenience": 0
+              },
+              "188": {
+                "deptId": "0",
+                "deptName": "妇科疾病全程管理咨询门诊（护理）",
+                "LabelId": "31",
+                "districtCode": "2",
+                "treeID": "182",
+                "ParentId": "175",
+                "period": "上午",
+                "SeqNo": "7",
+                "convenience": 0
+              },
+              "201": {
+                "deptId": "0",
+                "deptName": "伤口治疗门诊（护理）",
+                "LabelId": "33",
+                "districtCode": "2",
+                "treeID": "183",
+                "ParentId": "175",
+                "period": "上午",
+                "SeqNo": "8",
+                "convenience": 0
+              },
+              "227": {
+                "deptId": "0",
+                "deptName": "女性性医学门诊",
+                "LabelId": "45",
+                "districtCode": "2",
+                "treeID": "218",
+                "ParentId": "175",
+                "period": "上午",
+                "SeqNo": "9",
+                "convenience": 0
+              },
+              "237": {
+                "deptId": "0",
+                "deptName": "宫腔疾病专科门诊",
+                "LabelId": "61",
+                "districtCode": "2",
+                "treeID": "336",
+                "ParentId": "175",
+                "period": "上午",
+                "SeqNo": "10",
+                "convenience": 0
+              },
+              "246": {
+                "deptId": "0",
+                "deptName": "宫腔粘连/宫腔镜专病门诊",
+                "LabelId": "62",
+                "districtCode": "2",
+                "treeID": "337",
+                "ParentId": "175",
+                "period": "上午",
+                "SeqNo": "11",
+                "convenience": 0
+              },
+              "269": {
+                "deptId": "0",
+                "deptName": "青少年妇科/小儿妇科门诊",
+                "LabelId": "63",
+                "districtCode": "2",
+                "treeID": "338",
+                "ParentId": "175",
+                "period": "上午",
+                "SeqNo": "12",
+                "convenience": 0
+              },
+              "275": {
+                "deptId": "0",
+                "deptName": "子宫内膜异位症全程管理门诊",
+                "LabelId": "66",
+                "districtCode": "2",
+                "treeID": "339",
+                "ParentId": "175",
+                "period": "上午",
+                "SeqNo": "13",
+                "convenience": 0
+              },
+              "281": {
+                "deptId": "0",
+                "deptName": "妇科淋巴水肿护理门诊（护理）",
+                "LabelId": "68",
+                "districtCode": "2",
+                "treeID": "340",
+                "ParentId": "175",
+                "period": "上午",
+                "SeqNo": "14",
+                "convenience": 0
+              },
+              "302": {
+                "deptId": "0",
+                "deptName": "普通妇科专科门诊",
+                "LabelId": "79",
+                "districtCode": "2",
+                "treeID": "386",
+                "ParentId": "175",
+                "period": "上午",
+                "SeqNo": "16",
+                "convenience": 0
+              },
+              "307": {
+                "deptId": "0",
+                "deptName": "妇科肿瘤专科门诊",
+                "LabelId": "80",
+                "districtCode": "2",
+                "treeID": "387",
+                "ParentId": "175",
+                "period": "上午",
+                "SeqNo": "17",
+                "convenience": 0
+              },
+              "314": {
+                "deptId": "0",
+                "deptName": "宫颈疾病专科门诊",
+                "LabelId": "81",
+                "districtCode": "2",
+                "treeID": "388",
+                "ParentId": "175",
+                "period": "上午",
+                "SeqNo": "18",
+                "convenience": 0
+              }
+            }
+          },
+          "169": {
+            "deptId": "0",
+            "deptName": "妇科肿瘤放化疗特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "184",
+            "ParentId": "156",
+            "period": "上午",
+            "SeqNo": "6",
+            "convenience": 0,
+            "tree2": {
+              "28": {
+                "deptId": "0",
+                "deptName": "妇科肿瘤遗传咨询门诊",
+                "LabelId": "19",
+                "districtCode": "2",
+                "treeID": "185",
+                "ParentId": "184",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              }
+            }
+          },
+          "183": {
+            "deptId": "0",
+            "deptName": "孕前保健门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "396",
+            "ParentId": "156",
+            "period": "上午",
+            "SeqNo": "7",
+            "convenience": 0,
+            "tree2": {
+              "26": {
+                "deptId": "0",
+                "deptName": "孕前保健门诊(女)",
+                "LabelId": "82",
+                "districtCode": "2",
+                "treeID": "397",
+                "ParentId": "396",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "49": {
+                "deptId": "0",
+                "deptName": "育前保健门诊(男)",
+                "LabelId": "83",
+                "districtCode": "2",
+                "treeID": "398",
+                "ParentId": "396",
+                "period": "上午",
+                "SeqNo": "2",
+                "convenience": 0
+              }
+            }
+          },
+          "212": {
+            "deptId": "0",
+            "deptName": "产科特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "186",
+            "ParentId": "156",
+            "period": "上午",
+            "SeqNo": "8",
+            "convenience": 0,
+            "tree2": {
+              "14": {
+                "deptId": "0",
+                "deptName": "高龄孕产妇专科门诊",
+                "LabelId": "6",
+                "districtCode": "2",
+                "treeID": "187",
+                "ParentId": "186",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "73": {
+                "deptId": "0",
+                "deptName": "自发性早产门诊",
+                "LabelId": "23",
+                "districtCode": "2",
+                "treeID": "188",
+                "ParentId": "186",
+                "period": "上午",
+                "SeqNo": "2",
+                "convenience": 0
+              },
+              "93": {
+                "deptId": "0",
+                "deptName": "胎儿医学门诊",
+                "LabelId": "24",
+                "districtCode": "2",
+                "treeID": "189",
+                "ParentId": "186",
+                "period": "上午",
+                "SeqNo": "3",
+                "convenience": 0
+              },
+              "111": {
+                "deptId": "0",
+                "deptName": "产后复查门诊",
+                "LabelId": "14",
+                "districtCode": "2",
+                "treeID": "190",
+                "ParentId": "186",
+                "period": "上午",
+                "SeqNo": "4",
+                "convenience": 0
+              },
+              "152": {
+                "deptId": "0",
+                "deptName": "母乳喂养门诊（护理）",
+                "LabelId": "15",
+                "districtCode": "2",
+                "treeID": "191",
+                "ParentId": "186",
+                "period": "上午",
+                "SeqNo": "5",
+                "convenience": 0
+              },
+              "172": {
+                "deptId": "0",
+                "deptName": "分娩咨询门诊（护理）",
+                "LabelId": "32",
+                "districtCode": "2",
+                "treeID": "192",
+                "ParentId": "186",
+                "period": "上午",
+                "SeqNo": "6",
+                "convenience": 0
+              }
+            }
+          },
+          "222": {
+            "deptId": "0",
+            "deptName": "生殖内分泌特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "193",
+            "ParentId": "156",
+            "period": "上午",
+            "SeqNo": "9",
+            "convenience": 0,
+            "tree2": {
+              "10": {
+                "deptId": "0",
+                "deptName": "复发性流产门诊",
+                "LabelId": "5",
+                "districtCode": "2",
+                "treeID": "194",
+                "ParentId": "193",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "69": {
+                "deptId": "0",
+                "deptName": "更年期门诊",
+                "LabelId": "26",
+                "districtCode": "2",
+                "treeID": "195",
+                "ParentId": "193",
+                "period": "上午",
+                "SeqNo": "2",
+                "convenience": 0
+              },
+              "119": {
+                "deptId": "0",
+                "deptName": "监测排卵综合管理",
+                "LabelId": "25",
+                "districtCode": "2",
+                "treeID": "197",
+                "ParentId": "193",
+                "period": "上午",
+                "SeqNo": "4",
+                "convenience": 0
+              },
+              "135": {
+                "deptId": "0",
+                "deptName": "多囊卵巢综合征门诊",
+                "LabelId": "42",
+                "districtCode": "2",
+                "treeID": "206",
+                "ParentId": "193",
+                "period": "上午",
+                "SeqNo": "5",
+                "convenience": 0
+              },
+              "177": {
+                "deptId": "0",
+                "deptName": "计划生育门诊",
+                "LabelId": "47",
+                "districtCode": "2",
+                "treeID": "228",
+                "ParentId": "193",
+                "period": "上午",
+                "SeqNo": "6",
+                "convenience": 0
+              }
+            }
+          },
+          "232": {
+            "deptId": "0",
+            "deptName": "生殖医学（不孕不育及试管婴儿）特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "198",
+            "ParentId": "156",
+            "period": "上午",
+            "SeqNo": "10",
+            "convenience": 0,
+            "tree2": {
+              "23": {
+                "deptId": "0",
+                "deptName": "复发性流产门诊",
+                "LabelId": "5",
+                "districtCode": "2",
+                "treeID": "199",
+                "ParentId": "198",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "81": {
+                "deptId": "0",
+                "deptName": "多囊卵巢综合征门诊",
+                "LabelId": "42",
+                "districtCode": "2",
+                "treeID": "208",
+                "ParentId": "198",
+                "period": "上午",
+                "SeqNo": "3",
+                "convenience": 0
+              },
+              "149": {
+                "deptId": "0",
+                "deptName": "生殖遗传门诊",
+                "LabelId": "64",
+                "districtCode": "2",
+                "treeID": "341",
+                "ParentId": "198",
+                "period": "上午",
+                "SeqNo": "5",
+                "convenience": 0
+              },
+              "168": {
+                "deptId": "0",
+                "deptName": "生育力保存门诊",
+                "LabelId": "65",
+                "districtCode": "2",
+                "treeID": "342",
+                "ParentId": "198",
+                "period": "上午",
+                "SeqNo": "6",
+                "convenience": 0
+              },
+              "368": {
+                "deptId": "0",
+                "deptName": "孕前保健门诊(停)",
+                "LabelId": "73",
+                "districtCode": "2",
+                "treeID": "355",
+                "ParentId": "198",
+                "period": "上午",
+                "SeqNo": "99",
+                "convenience": 0
+              }
+            }
+          },
+          "255": {
+            "deptId": "0",
+            "deptName": "妇产科/儿科药物咨询门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "201",
+            "ParentId": "156",
+            "period": "上午",
+            "SeqNo": "11",
+            "convenience": 0,
+            "tree2": {
+              "35": {
+                "deptId": "0",
+                "deptName": "儿科药学联合门诊",
+                "LabelId": "36",
+                "districtCode": "2",
+                "treeID": "202",
+                "ParentId": "201",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              },
+              "56": {
+                "deptId": "0",
+                "deptName": "妊娠期哺乳期药学联合门诊",
+                "LabelId": "37",
+                "districtCode": "2",
+                "treeID": "203",
+                "ParentId": "201",
+                "period": "上午",
+                "SeqNo": "2",
+                "convenience": 0
+              },
+              "79": {
+                "deptId": "0",
+                "deptName": "妇科肿瘤药学联合门诊",
+                "LabelId": "38",
+                "districtCode": "2",
+                "treeID": "204",
+                "ParentId": "201",
+                "period": "上午",
+                "SeqNo": "3",
+                "convenience": 0
+              }
+            }
+          },
+          "265": {
+            "deptId": "0",
+            "deptName": "生殖男科特色门诊",
+            "LabelId": "0",
+            "districtCode": "1",
+            "treeID": "221",
+            "ParentId": "156",
+            "period": "上午",
+            "SeqNo": "12",
+            "convenience": 0,
+            "tree2": {
+              "6": {
+                "deptId": "0",
+                "deptName": "睾丸发育不良/无精症门诊",
+                "LabelId": "46",
+                "districtCode": "2",
+                "treeID": "222",
+                "ParentId": "221",
+                "period": "上午",
+                "SeqNo": "1",
+                "convenience": 0
+              }
+            }
+          },
+          "272": {
+            "deptId": "1818",
+            "deptName": "放射影像门诊",
+            "LabelId": "0",
+            "districtCode": "2",
+            "treeID": "238",
+            "ParentId": "156",
+            "period": "上午",
+            "SeqNo": "13",
+            "convenience": 0
+          },
+          "288": {
+            "deptId": "0",
+            "deptName": "产前超声疑难门诊",
+            "LabelId": "51",
+            "districtCode": "2",
+            "treeID": "259",
+            "ParentId": "156",
+            "period": "上午",
+            "SeqNo": "14",
+            "convenience": 0
+          }
+        }
+      },
+      "156": {
+        "deptId": "0",
+        "deptName": "内科",
+        "LabelId": "0",
+        "districtCode": "1",
+        "treeID": "375",
+        "ParentId": "2",
+        "period": "上午",
+        "SeqNo": "6",
+        "convenience": 0
+      },
+      "193": {
+        "deptId": "0",
+        "deptName": "外科",
+        "LabelId": "0",
+        "districtCode": "1",
+        "treeID": "376",
+        "ParentId": "2",
+        "period": "上午",
+        "SeqNo": "7",
+        "convenience": 0
+      }
+    }
+  }
+}
