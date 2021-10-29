@@ -27,6 +27,7 @@ public:
 	BOOL Dialog_Doctor_GetRegister(LPCTSTR lpszScheduleID);
 	BOOL Dialog_Doctor_GetVer();
 	BOOL Dialog_Doctor_PostVer();
+	static DWORD WINAPI Dialog_Doctor_Thread(LPVOID lParam);
 public:
 	virtual BOOL OnInitDialog();
 	CListCtrl m_ListDoctor;
@@ -42,4 +43,9 @@ public:
 	CEdit m_EditProUserID;
 	afx_msg void OnBnClickedButton3();
 	afx_msg void OnNMClickList1(NMHDR* pNMHDR, LRESULT* pResult);
+	CEdit m_EditLabelID;
+	BOOL bRun;
+	HANDLE hThread;
+	afx_msg void OnBnClickedButton4();
+	CButton m_BtnGetVotes;
 };

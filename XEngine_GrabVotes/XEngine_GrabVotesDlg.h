@@ -38,4 +38,5 @@ public:
 	CTabCtrl m_TabDay;
 	afx_msg void OnBnClickedButton2();
 	afx_msg void OnTcnSelchangeTab1(NMHDR* pNMHDR, LRESULT* pResult);
+	CButton m_BtnHospital;
 };

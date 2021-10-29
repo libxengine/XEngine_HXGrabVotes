@@ -122,9 +122,28 @@ void CDialog_PICVer::OnBnClickedButton1()
 		free(ptszGBKBuffer);
 		return ;
 	}
+
+	BOOL bRet = TRUE;
+	if (Json::stringValue == st_JsonRoot["state"].type())
+	{
+		if (1 != _ttoi(st_JsonRoot["state"].asCString()))
+		{
+			bRet = FALSE;
+		}
+	}
+	else
+	{
+		if (1 != st_JsonRoot["state"].asInt())
+		{
+			bRet = FALSE;
+		}
+	}
+
 	AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
 	free(ptszGBKBuffer);
 	BaseLib_OperatorMemory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
+
+	bRet ? OnOK() : OnCancel();
 }
 
 
@@ -171,7 +190,7 @@ void CDialog_PICVer::OnPaint()
 	if (!bInit)
 	{
 #ifdef _DEBUG
-		LPCTSTR lpszFile = _T("D:\\XEngine_GrabVotes\\Debug\\1.jpg");
+		LPCTSTR lpszFile = _T("D:\\XEngine_HXGrabVotes\\Debug\\1.jpg");
 #else
 		LPCTSTR lpszFile = _T("./1.jpg");
 #endif

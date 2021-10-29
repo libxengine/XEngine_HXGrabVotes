@@ -29,6 +29,7 @@ void CXEngineGrabVotesDlg::DoDataExchange(CDataExchange* pDX)
 	DDX_Control(pDX, IDC_EDIT1, m_EditDistinctid);
 	DDX_Control(pDX, IDC_TREE1, m_TreeHospital);
 	DDX_Control(pDX, IDC_TAB1, m_TabDay);
+	DDX_Control(pDX, IDC_BUTTON1, m_BtnHospital);
 }
 
 BEGIN_MESSAGE_MAP(CXEngineGrabVotesDlg, CDialogEx)
@@ -52,7 +53,15 @@ BOOL CXEngineGrabVotesDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// 设置小图标
 
 	// TODO: 在此添加额外的初始化代码
-	m_EditDistinctid.SetWindowText(_T("UM_distinctid=17ca0cacf959c9-0399b79a850e08-61263e23-1fa400-17ca0cacf96861; PHPSESSID=mdhlmjtmvlt9618f7gteeupri5; CNZZDATA1256540924=1785612925-1634775147-%7C1635477020;"));
+#ifdef _DEBUG
+	LPCTSTR lpszFile = _T("D:\\XEngine_HXGrabVotes\\Debug\\Votes.ini");
+#else
+	LPCTSTR lpszFile = _T("./Votes.ini");
+#endif
+	TCHAR tszMsgBuffer[1024];
+	memset(tszMsgBuffer, '\0', sizeof(tszMsgBuffer));
+	GetPrivateProfileString("Info", "cookie", NULL, tszMsgBuffer, sizeof(tszMsgBuffer), lpszFile);
+	m_EditDistinctid.SetWindowText(tszMsgBuffer);
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
 }
 
@@ -147,7 +156,7 @@ void CXEngineGrabVotesDlg::OnBnClickedButton1()
 	{
 		if (1 != _ttoi(st_JsonRoot["state"].asCString()))
 		{
-			AfxMessageBox(_T("请求错误,可能会话ID信息不正确"));
+			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
 			free(ptszGBKBuffer);
 			return;
 		}
@@ -156,7 +165,7 @@ void CXEngineGrabVotesDlg::OnBnClickedButton1()
 	{
 		if (1 != st_JsonRoot["state"].asInt())
 		{
-			AfxMessageBox(_T("请求错误,可能会话ID信息不正确"));
+			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
 			free(ptszGBKBuffer);
 			return;
 		}
@@ -208,6 +217,7 @@ void CXEngineGrabVotesDlg::OnBnClickedButton1()
 		}
 	}
 	free(ptszGBKBuffer);
+	m_BtnHospital.EnableWindow(FALSE);
 }
 
 
@@ -221,6 +231,21 @@ void CXEngineGrabVotesDlg::OnBnClickedButton2()
 	CHAR* ptszMsgBuffer = NULL;
 	XENGINE_LIBTIMER st_LibTime;
 
+	if (NULL != pm_DialogDoctor)
+	{
+		for (int i = 0; i < m_TabDay.GetItemCount(); i++)
+		{
+			for (int j = 0; j < pm_DialogDoctor[i].m_ListDoctor.GetItemCount(); j++)
+			{
+				XENGINE_DOCTORINFO *pSt_DoctorInfo = (XENGINE_DOCTORINFO *)pm_DialogDoctor[i].m_ListDoctor.GetItemData(j);
+				delete pSt_DoctorInfo;
+				pSt_DoctorInfo = NULL;
+			}
+		}
+		m_TabDay.DeleteAllItems();
+		delete[]pm_DialogDoctor;
+		pm_DialogDoctor = NULL;
+	}
 	memset(tszHdrBuffer, '\0', sizeof(tszHdrBuffer));
 	memset(&st_LibTime, '\0', sizeof(XENGINE_LIBTIMER));
 
@@ -268,7 +293,7 @@ void CXEngineGrabVotesDlg::OnBnClickedButton2()
 	{
 		if (1 != _ttoi(st_JsonRoot["state"].asCString()))
 		{
-			AfxMessageBox(_T("请求错误,可能会话ID信息不正确"));
+			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
 			free(ptszGBKBuffer);
 			return;
 		}
@@ -277,7 +302,7 @@ void CXEngineGrabVotesDlg::OnBnClickedButton2()
 	{
 		if (1 != st_JsonRoot["state"].asInt())
 		{
-			AfxMessageBox(_T("请求错误,可能会话ID信息不正确"));
+			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
 			free(ptszGBKBuffer);
 			return;
 		}
@@ -302,6 +327,8 @@ void CXEngineGrabVotesDlg::OnBnClickedButton2()
 	pm_DialogDoctor[0].ShowWindow(SW_SHOW);
 	m_TabDay.SetCurSel(0);
 	free(ptszGBKBuffer);
+
+	XEngine_GrabVotes_Post(0);
 	return;
 }
 
@@ -374,7 +401,7 @@ BOOL CXEngineGrabVotesDlg::XEngine_GrabVotes_Post(int nSelected)
 	{
 		if (1 != _ttoi(st_JsonRoot["state"].asCString()))
 		{
-			AfxMessageBox(_T("请求错误,可能会话ID信息不正确"));
+			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
 			free(ptszGBKBuffer);
 			return FALSE;
 		}
@@ -383,7 +410,7 @@ BOOL CXEngineGrabVotesDlg::XEngine_GrabVotes_Post(int nSelected)
 	{
 		if (1 != st_JsonRoot["state"].asInt())
 		{
-			AfxMessageBox(_T("请求错误,可能会话ID信息不正确"));
+			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
 			free(ptszGBKBuffer);
 			return FALSE;
 		}
@@ -394,12 +421,46 @@ BOOL CXEngineGrabVotesDlg::XEngine_GrabVotes_Post(int nSelected)
 		XENGINE_DOCTORINFO* pSt_DoctorInfo = new XENGINE_DOCTORINFO;
 		memset(pSt_DoctorInfo, '\0', sizeof(XENGINE_DOCTORINFO));
 
-		pSt_DoctorInfo->nDistrictCode = _ttoi(st_JsonArray[i]["districtCode"].asCString());
-		_tcscpy(pSt_DoctorInfo->tszDoctorID, st_JsonArray[i]["doctorid"].asCString());
-		_tcscpy(pSt_DoctorInfo->tszDoctorGoodAt, st_JsonArray[i]["begoodat"].asCString());
-		_tcscpy(pSt_DoctorInfo->tszDoctorType, st_JsonArray[i]["SessionType"].asCString());
-		_tcscpy(pSt_DoctorInfo->tszDoctorTicket, st_JsonArray[i]["SeqNoStrLast"].asCString());
-		_tcscpy(pSt_DoctorInfo->tszDoctorName,st_JsonArray[i]["docName"].asCString());
+		if (!st_JsonArray[i]["docName"].isNull())
+		{
+			_tcscpy(pSt_DoctorInfo->tszDoctorName, st_JsonArray[i]["docName"].asCString());
+		}
+
+		if (Json::ValueType::stringValue == st_JsonArray[i]["districtCode"].type())
+		{
+			pSt_DoctorInfo->nDistrictCode = _ttoi(st_JsonArray[i]["districtCode"].asCString());
+		}
+		else
+		{
+			pSt_DoctorInfo->nDistrictCode = st_JsonArray[i]["districtCode"].asInt();
+		}
+
+		if (Json::ValueType::stringValue == st_JsonArray[i]["doctorid"].type())
+		{
+			_tcscpy(pSt_DoctorInfo->tszDoctorID, st_JsonArray[i]["doctorid"].asCString());
+		}
+		else
+		{
+			_stprintf(pSt_DoctorInfo->tszDoctorID, _T("%d"), st_JsonArray[i]["doctorid"].asInt());
+		}
+
+		if (!st_JsonArray[i]["begoodat"].isNull())
+		{
+			_tcscpy(pSt_DoctorInfo->tszDoctorGoodAt, st_JsonArray[i]["begoodat"].asCString());
+		}
+		if (!st_JsonArray[i]["SessionType"].isNull())
+		{
+			_tcscpy(pSt_DoctorInfo->tszDoctorType, st_JsonArray[i]["SessionType"].asCString());
+		}
+
+		if (Json::ValueType::stringValue == st_JsonArray[i]["SeqNoStrLast"].type())
+		{
+			_tcscpy(pSt_DoctorInfo->tszDoctorTicket, st_JsonArray[i]["SeqNoStrLast"].asCString());
+		}
+		else
+		{
+			_stprintf(pSt_DoctorInfo->tszDoctorTicket, _T("%d"), st_JsonArray[i]["SeqNoStrLast"].asInt());
+		}
 
 		TCHAR tszItemBuffer[MAX_PATH];
 		memset(tszItemBuffer, '\0', MAX_PATH);

@@ -34,6 +34,8 @@ void CDialog_DayDoctor::DoDataExchange(CDataExchange* pDX)
 	DDX_Control(pDX, IDC_EDIT6, m_EditProName);
 	DDX_Control(pDX, IDC_EDIT7, m_EditWXID);
 	DDX_Control(pDX, IDC_EDIT8, m_EditProUserID);
+	DDX_Control(pDX, IDC_EDIT10, m_EditLabelID);
+	DDX_Control(pDX, IDC_BUTTON4, m_BtnGetVotes);
 }
 
 
@@ -41,6 +43,7 @@ BEGIN_MESSAGE_MAP(CDialog_DayDoctor, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON2, &CDialog_DayDoctor::OnBnClickedButton2)
 	ON_BN_CLICKED(IDC_BUTTON3, &CDialog_DayDoctor::OnBnClickedButton3)
 	ON_NOTIFY(NM_CLICK, IDC_LIST1, &CDialog_DayDoctor::OnNMClickList1)
+	ON_BN_CLICKED(IDC_BUTTON4, &CDialog_DayDoctor::OnBnClickedButton4)
 END_MESSAGE_MAP()
 
 
@@ -128,7 +131,7 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_PostInfo()
 	{
 		if (1 != _ttoi(st_JsonRoot["state"].asCString()))
 		{
-			AfxMessageBox(_T("请求错误,可能会话ID信息不正确"));
+			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
 			free(ptszGBKBuffer);
 			return FALSE;
 		}
@@ -137,7 +140,7 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_PostInfo()
 	{
 		if (1 != st_JsonRoot["state"].asInt())
 		{
-			AfxMessageBox(_T("请求错误,可能会话ID信息不正确"));
+			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
 			free(ptszGBKBuffer);
 			return FALSE;
 		}
@@ -148,14 +151,27 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_PostInfo()
 	{
 		if (0 == _tcsncmp(st_JsonArray[i]["period"].asCString(), m_StrDate.GetBuffer(), m_StrDate.GetLength()))
 		{
-			if (_ttoi(st_JsonArray[i]["SeqNoStrLast"].asCString()) > 0)
+			if (Json::ValueType::stringValue == st_JsonArray[i]["SeqNoStrLast"].type())
 			{
-				m_EditSchedule.SetWindowText(st_JsonArray[i]["schedulid"].asCString());
-				break;
+				if (_ttoi(st_JsonArray[i]["SeqNoStrLast"].asCString()) > 0)
+				{
+					m_EditLabelID.SetWindowText(st_JsonArray[i]["LabelId"].asCString());
+					m_EditSchedule.SetWindowText(st_JsonArray[i]["schedulid"].asCString());
+					break;
+				}
+			}
+			else
+			{
+				if (st_JsonArray[i]["SeqNoStrLast"].asInt() > 0)
+				{
+					m_EditLabelID.SetWindowText(st_JsonArray[i]["LabelId"].asCString());
+					m_EditSchedule.SetWindowText(st_JsonArray[i]["schedulid"].asCString());
+					break;
+				}
 			}
 		}
 	}
-
+	
 	free(ptszGBKBuffer);
 	BaseLib_OperatorMemory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
 	return TRUE;
@@ -220,7 +236,7 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetInfo()
 	{
 		if (1 != _ttoi(st_JsonRoot["state"].asCString()))
 		{
-			AfxMessageBox(_T("请求错误,可能会话ID信息不正确"));
+			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
 			free(ptszGBKBuffer);
 			return FALSE;
 		}
@@ -229,7 +245,7 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetInfo()
 	{
 		if (1 != st_JsonRoot["state"].asInt())
 		{
-			AfxMessageBox(_T("请求错误,可能会话ID信息不正确"));
+			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
 			free(ptszGBKBuffer);
 			return FALSE;
 		}
@@ -295,7 +311,7 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetWXID()
 	{
 		if (1 != _ttoi(st_JsonRoot["state"].asCString()))
 		{
-			AfxMessageBox(_T("请求错误,可能会话ID信息不正确"));
+			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
 			free(ptszGBKBuffer);
 			return FALSE;
 		}
@@ -304,7 +320,7 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetWXID()
 	{
 		if (1 != st_JsonRoot["state"].asInt())
 		{
-			AfxMessageBox(_T("请求错误,可能会话ID信息不正确"));
+			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
 			free(ptszGBKBuffer);
 			return FALSE;
 		}
@@ -325,9 +341,18 @@ void CDialog_DayDoctor::OnBnClickedButton2()
 		AfxMessageBox(_T("没有选择医生"));
 		return;
 	}
-	Dialog_Doctor_PostInfo();
-	Dialog_Doctor_GetInfo();
-	Dialog_Doctor_GetWXID();
+	if (!Dialog_Doctor_PostInfo())
+	{
+		return;
+	}
+	if (!Dialog_Doctor_GetInfo())
+	{
+		return;
+	}
+	if (!Dialog_Doctor_GetWXID())
+	{
+		return;
+	}
 }
 
 BOOL CDialog_DayDoctor::Dialog_Doctor_GetRegister(LPCTSTR lpszScheduleID)
@@ -378,7 +403,7 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetRegister(LPCTSTR lpszScheduleID)
 	{
 		if (1 != _ttoi(st_JsonRoot["state"].asCString()))
 		{
-			AfxMessageBox(_T("请求错误,可能会话ID信息不正确"));
+			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
 			free(ptszGBKBuffer);
 			return FALSE;
 		}
@@ -387,7 +412,7 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetRegister(LPCTSTR lpszScheduleID)
 	{
 		if (1 != st_JsonRoot["state"].asInt())
 		{
-			AfxMessageBox(_T("请求错误,可能会话ID信息不正确"));
+			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
 			free(ptszGBKBuffer);
 			return FALSE;
 		}
@@ -427,7 +452,7 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetVer()
 		return FALSE;
 	}
 #ifdef _DEBUG
-	LPCTSTR lpszFile = _T("D:\\XEngine_GrabVotes\\Debug\\1.jpg");
+	LPCTSTR lpszFile = _T("D:\\XEngine_HXGrabVotes\\Debug\\1.jpg");
 #else
 	LPCTSTR lpszFile = _T("./1.jpg");
 #endif
@@ -436,7 +461,10 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetVer()
 	fclose(pSt_File);
 
 	CDialog_PICVer m_DlgPICVer;
-	m_DlgPICVer.DoModal();
+	if (IDOK == m_DlgPICVer.DoModal())
+	{
+		bRun = FALSE;
+	}
 
 	free(ptszGBKBuffer);
 	BaseLib_OperatorMemory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
@@ -461,6 +489,13 @@ void CDialog_DayDoctor::OnNMClickList1(NMHDR* pNMHDR, LRESULT* pResult)
 {
 	LPNMITEMACTIVATE pNMItemActivate = reinterpret_cast<LPNMITEMACTIVATE>(pNMHDR);
 	// TODO: 在此添加控件通知处理程序代码
+
+	m_EditName.SetWindowText("");
+	m_EditLevel.SetWindowText("");
+	m_EditCode.SetWindowText("");
+	m_EditGoodat.SetWindowText("");
+	m_EditTicket.SetWindowText("");
+
 	POSITION pSt_PosItem = m_ListDoctor.GetFirstSelectedItemPosition();
 	if (NULL == pSt_PosItem)
 	{
@@ -478,4 +513,52 @@ void CDialog_DayDoctor::OnNMClickList1(NMHDR* pNMHDR, LRESULT* pResult)
 	m_EditTicket.SetWindowText(pSt_DoctorInfo->tszDoctorTicket);
 
 	*pResult = 0;
+}
+
+DWORD WINAPI CDialog_DayDoctor::Dialog_Doctor_Thread(LPVOID lParam)
+{
+	CDialog_DayDoctor* pClass_This = (CDialog_DayDoctor*)lParam;
+	CString m_StrSchedule;
+	pClass_This->m_EditSchedule.GetWindowText(m_StrSchedule);
+	if (m_StrSchedule.IsEmpty())
+	{
+		pClass_This->bRun = FALSE;
+		AfxMessageBox(_T("请求失败,没有获取到个人信息"));
+		return -1;
+	}
+	while (pClass_This->bRun)
+	{
+		pClass_This->Dialog_Doctor_GetRegister(m_StrSchedule.GetBuffer());
+		pClass_This->Dialog_Doctor_GetVer();
+		Sleep(100);
+	}
+	return 0;
+}
+
+void CDialog_DayDoctor::OnBnClickedButton4()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	CString m_StrBtnVotes;
+	LPCTSTR lpszMsgBtn = _T("一键抢票");
+	m_BtnGetVotes.GetWindowText(m_StrBtnVotes);
+
+	if (0 == _tcsncmp(lpszMsgBtn, m_StrBtnVotes.GetBuffer(), _tcslen(lpszMsgBtn)))
+	{
+		POSITION pSt_PosItem = m_ListDoctor.GetFirstSelectedItemPosition();
+		if (NULL == pSt_PosItem)
+		{
+			AfxMessageBox(_T("没有选择医生"));
+			return;
+		}
+		bRun = TRUE;
+		hThread = CreateThread(NULL, 0, Dialog_Doctor_Thread, this, 0, NULL);
+		m_BtnGetVotes.SetWindowText(_T("暂停抢票"));
+	}
+	else
+	{
+		bRun = FALSE;
+		CloseHandle(hThread);
+
+		m_BtnGetVotes.SetWindowText(_T("一键抢票"));
+	}
 }
