@@ -21,10 +21,8 @@ protected:
 
 	DECLARE_MESSAGE_MAP()
 public:
-	BOOL Dialog_Doctor_PostInfo();
 	BOOL Dialog_Doctor_GetInfo();
 	BOOL Dialog_Doctor_GetWXID();
-	BOOL Dialog_Doctor_GetRegister(LPCTSTR lpszScheduleID);
 	BOOL Dialog_Doctor_GetVer();
 	BOOL Dialog_Doctor_PostVer();
 	static DWORD WINAPI Dialog_Doctor_Thread(LPVOID lParam);
@@ -37,15 +35,14 @@ public:
 	CEdit m_EditGoodat;
 	afx_msg void OnBnClickedButton2();
 	CEdit m_EditTicket;
-	CEdit m_EditSchedule;
 	CEdit m_EditProName;
 	CEdit m_EditWXID;
 	CEdit m_EditProUserID;
 	afx_msg void OnBnClickedButton3();
 	afx_msg void OnNMClickList1(NMHDR* pNMHDR, LRESULT* pResult);
-	CEdit m_EditLabelID;
 	BOOL bRun;
 	HANDLE hThread;
 	afx_msg void OnBnClickedButton4();
 	CButton m_BtnGetVotes;
+	CListCtrl m_ListInfo;
 };

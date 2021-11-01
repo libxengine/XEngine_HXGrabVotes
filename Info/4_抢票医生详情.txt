@@ -1,200 +1,222 @@
 {
-    "state":1,
-    "errorMsg":"成功",
-    "data":{
-        "wx_id":"onXVAwnQ2chmoUoQ4LBBduSfjrNw",
-        "docInfo":{
-            "doctorid":"4138",
-            "docName":"李蕾",
-            "begoodat":"辅助生殖技术、女性生育力保存、不孕症、复发性流产、多囊卵巢综合症",
-            "doctorhead":"uploads/n/MbTXENO0O0Ok/b/0/7/b/20120511055814619.jpg",
-            "description":"\r\n\t生殖内分泌博士，中华医学会生殖医学分会实验室学组委员，中华医学继续教育委员会产科专委会常务委员，中国妇幼保健协会生育力保存专委会委员、四川省医学会生殖医学专委会委员，四川省卫生计生委学术和技术带头人后备人选。曾担任生殖中心实验室负责人及供精人工授精技术负责人十余年，原生殖医学/精子库党支部书记。负责四川省卫生厅课题2项，作为主研参加国家级及省厅级科研课题6项(包括国家自然科学基金课题3项和国家十一五科技支撑计划重点项目1项)。在国内外核心专业期刊发表论文50余篇(其中第一作者及通讯作者论文17篇),参编《妇产科学》等教材著作4部。2008年获四川省科技进步二等奖1项。获医院“服务之星”、“优秀教师”、“优秀党务干部”、“优秀党员”等多项奖励。上榜“2017胡润·平安中国好医生榜”。\r\n\r\n\r\n\t\r\n\r\n\r\n\t\r\n\r\n\r\n\t\r\n",
-            "regType":"0",
-            "doccode":"303133",
-            "profession":"副主任医师",
-            "onlyOfflineReg":"0",
-            "open_server":"on",
-            "open_consult":"on",
-            "onlineInquiryUrl":"/index.php?g=Wap&amp;m=FeyOnlineConsultantJump&amp;a=kuaierkangJumpDoctor&amp;docid=11230&amp;jumpType=docDetail",
-            "followId":0
+  "state": 1,
+  "errorMsg": "成功",
+  "data": {
+    "wx_id": "onXVAwnQ2chmoUoQ4LBBduSfjrNw",
+    "docInfo": {
+      "doctorid": "3804",
+      "docName": "邢爱耘",
+      "begoodat": "产科学、围产医学",
+      "doctorhead": "uploads/n/MbTXENO0O0Ok/b/0/7/b/20120511045104729.jpg",
+      "description": "\r\n\t\r\n\r\n\r\n\t妇产科副主任。中华医学会四川省分会妇产科专委委员、原产科学组组长，中华预防医学会妇女保健分会委员、围产保健学组副组长，\r\n四川省卫生厅学术和技术带头人，四川省精品课程“妇产科学”课程负责人，国家级精品在线课程“生殖健康”的课程负责人。1981年考入原华西医科大学攻读临床医学专业，\r\n分别于1987、1990、2002年获得医学学士、硕士、博士学位。在四川大学华西二院从事妇产科、围产医学临床、科研、教学工作30年。曾赴巴黎法国国家科研中心（CNRS）进修及美国田那西大学学习。主要从事围产医学、胎儿医学的临床及基础研究。擅长围产保健及产科疑难、危急重症的诊断和治疗。对妊娠期肝内胆汁淤积症、糖尿病、妊娠期高血压疾病、多胎妊娠、早产、胎儿发育、孕期心理健康等有较多的基础与临床研究。\r\n负责主持国家自然科学基金及省级科研基金10项， 培养、指导硕博士研究生30多名，发表核心期刊（及SCI期刊）学术论文50余篇，主编、参编医学教材、专著17部。\r\n\r\n\r\n\t\r\n",
+      "regType": "0",
+      "doccode": "100739",
+      "profession": "博士、教授/主任医师、硕士生导师",
+      "onlyOfflineReg": "0",
+      "open_server": "off",
+      "open_consult": "off",
+      "onlineInquiryUrl": "off",
+      "followId": 0
+    },
+    "schedul": [
+      {
+        "SessionType": "一级专家",
+        "deptId": "997",
+        "deptName": "产科门诊",
+        "date": "2021-11-01",
+        "period": "上午",
+        "SeqNoStrUsed": "66",
+        "LabelId": "0",
+        "SeqNoStrLast": 0,
+        "SumFee": "90",
+        "districtCode": "1",
+        "AsRowid": "3175||1456",
+        "schedulid": "138875",
+        "districtInfo": {
+          "name": "华西院区",
+          "address": "四川省成都市人民南路三段20号"
         },
-        "schedul":[
-            {
-                "SessionType":"三级专家",
-                "deptId":"1022",
-                "deptName":"生殖医学科（不孕不育及试管婴儿）门诊",
-                "date":"2021-11-01",
-                "period":"上午",
-                "SeqNoStrUsed":"11",
-                "LabelId":"0",
-                "SeqNoStrLast":"19",
-                "SumFee":"32",
-                "districtCode":"1",
-                "AsRowid":"20215||439",
-                "schedulid":"138285",
-                "districtInfo":{
-                    "name":"华西院区",
-                    "address":"四川省成都市人民南路三段20号"
-                },
-                "week":"星期一",
-                "reason":"",
-                "onlyOfflineReg":0,
-                "usable":1
-            },
-            {
-                "SessionType":"三级专家",
-                "deptId":"1022",
-                "deptName":"生殖医学科（不孕不育及试管婴儿）门诊",
-                "date":"2021-11-01",
-                "period":"下午",
-                "SeqNoStrUsed":"3",
-                "LabelId":"0",
-                "SeqNoStrLast":"24",
-                "SumFee":"32",
-                "districtCode":"1",
-                "AsRowid":"20215||453",
-                "schedulid":"138359",
-                "districtInfo":{
-                    "name":"华西院区",
-                    "address":"四川省成都市人民南路三段20号"
-                },
-                "week":"星期一",
-                "reason":"",
-                "onlyOfflineReg":0,
-                "usable":1
-            },
-            {
-                "SessionType":"三级专家",
-                "deptId":"1022",
-                "deptName":"生殖医学科（不孕不育及试管婴儿）门诊",
-                "date":"2021-11-02",
-                "period":"上午",
-                "SeqNoStrUsed":"4",
-                "LabelId":"0",
-                "SeqNoStrLast":"26",
-                "SumFee":"32",
-                "districtCode":"1",
-                "AsRowid":"20215||444",
-                "schedulid":"138576",
-                "districtInfo":{
-                    "name":"华西院区",
-                    "address":"四川省成都市人民南路三段20号"
-                },
-                "week":"星期二",
-                "reason":"",
-                "onlyOfflineReg":0,
-                "usable":1
-            },
-            {
-                "SessionType":"三级专家",
-                "deptId":"1022",
-                "deptName":"生殖医学科（不孕不育及试管婴儿）门诊",
-                "date":"2021-11-03",
-                "period":"上午",
-                "SeqNoStrUsed":"4",
-                "LabelId":"0",
-                "SeqNoStrLast":"27",
-                "SumFee":"32",
-                "districtCode":"1",
-                "AsRowid":"20215||449",
-                "schedulid":"138910",
-                "districtInfo":{
-                    "name":"华西院区",
-                    "address":"四川省成都市人民南路三段20号"
-                },
-                "week":"星期三",
-                "reason":"",
-                "onlyOfflineReg":0,
-                "usable":1
-            },
-            {
-                "SessionType":"三级专家",
-                "deptId":"1022",
-                "deptName":"生殖医学科（不孕不育及试管婴儿）门诊",
-                "date":"2021-11-08",
-                "period":"上午",
-                "SeqNoStrUsed":"6",
-                "LabelId":"0",
-                "SeqNoStrLast":"27",
-                "SumFee":"32",
-                "districtCode":"1",
-                "AsRowid":"20215||440",
-                "schedulid":"139930",
-                "districtInfo":{
-                    "name":"华西院区",
-                    "address":"四川省成都市人民南路三段20号"
-                },
-                "week":"星期一",
-                "reason":"",
-                "onlyOfflineReg":0,
-                "usable":1
-            },
-            {
-                "SessionType":"三级专家",
-                "deptId":"1022",
-                "deptName":"生殖医学科（不孕不育及试管婴儿）门诊",
-                "date":"2021-11-08",
-                "period":"下午",
-                "SeqNoStrUsed":"1",
-                "LabelId":"0",
-                "SeqNoStrLast":"24",
-                "SumFee":"32",
-                "districtCode":"1",
-                "AsRowid":"20215||454",
-                "schedulid":"140007",
-                "districtInfo":{
-                    "name":"华西院区",
-                    "address":"四川省成都市人民南路三段20号"
-                },
-                "week":"星期一",
-                "reason":"",
-                "onlyOfflineReg":0,
-                "usable":1
-            },
-            {
-                "SessionType":"三级专家",
-                "deptId":"1022",
-                "deptName":"生殖医学科（不孕不育及试管婴儿）门诊",
-                "date":"2021-11-09",
-                "period":"上午",
-                "SeqNoStrUsed":"0",
-                "LabelId":"0",
-                "SeqNoStrLast":"29",
-                "SumFee":"32",
-                "districtCode":"1",
-                "AsRowid":"20215||445",
-                "schedulid":"140214",
-                "districtInfo":{
-                    "name":"华西院区",
-                    "address":"四川省成都市人民南路三段20号"
-                },
-                "week":"星期二",
-                "reason":"",
-                "onlyOfflineReg":0,
-                "usable":1
-            },
-            {
-                "SessionType":"三级专家",
-                "deptId":"1022",
-                "deptName":"生殖医学科（不孕不育及试管婴儿）门诊",
-                "date":"2021-11-10",
-                "period":"上午",
-                "SeqNoStrUsed":"1",
-                "LabelId":"0",
-                "SeqNoStrLast":"29",
-                "SumFee":"32",
-                "districtCode":"1",
-                "AsRowid":"20215||450",
-                "schedulid":"140556",
-                "districtInfo":{
-                    "name":"华西院区",
-                    "address":"四川省成都市人民南路三段20号"
-                },
-                "week":"星期三",
-                "reason":"",
-                "onlyOfflineReg":0,
-                "usable":1
-            }
-        ]
-    }
+        "week": "今日",
+        "reason": "上午挂号时间已结束,请在12:00前挂号",
+        "onlyOfflineReg": 0,
+        "usable": 0
+      },
+      {
+        "SessionType": "一级专家",
+        "deptId": "997",
+        "deptName": "产科门诊",
+        "date": "2021-11-03",
+        "period": "上午",
+        "SeqNoStrUsed": "60",
+        "LabelId": "0",
+        "SeqNoStrLast": "0",
+        "SumFee": "92",
+        "districtCode": "1",
+        "AsRowid": "3175||1461",
+        "schedulid": "138905",
+        "districtInfo": {
+          "name": "华西院区",
+          "address": "四川省成都市人民南路三段20号"
+        },
+        "week": "星期三",
+        "reason": "",
+        "onlyOfflineReg": 0,
+        "usable": 0
+      },
+      {
+        "SessionType": "一级专家",
+        "deptId": "0",
+        "deptName": "胎盘疾病专科门诊",
+        "date": "2021-11-03",
+        "period": "上午",
+        "SeqNoStrUsed": "59",
+        "LabelId": "77",
+        "SeqNoStrLast": "0",
+        "SumFee": "92",
+        "districtCode": "1",
+        "AsRowid": "3175||1461",
+        "schedulid": "139080",
+        "districtInfo": {
+          "name": "华西院区",
+          "address": "四川省成都市人民南路三段20号"
+        },
+        "week": "星期三",
+        "reason": "",
+        "onlyOfflineReg": 0,
+        "usable": 0
+      },
+      {
+        "SessionType": "一级专家",
+        "deptId": "997",
+        "deptName": "产科门诊",
+        "date": "2021-11-08",
+        "period": "上午",
+        "SeqNoStrUsed": "30",
+        "LabelId": "0",
+        "SeqNoStrLast": "0",
+        "SumFee": "92",
+        "districtCode": "1",
+        "AsRowid": "3175||1457",
+        "schedulid": "140525",
+        "districtInfo": {
+          "name": "华西院区",
+          "address": "四川省成都市人民南路三段20号"
+        },
+        "week": "星期一",
+        "reason": "",
+        "onlyOfflineReg": 0,
+        "usable": 0
+      },
+      {
+        "SessionType": "一级专家",
+        "deptId": "0",
+        "deptName": "妊娠并发症专科门诊",
+        "date": "2021-11-08",
+        "period": "上午",
+        "SeqNoStrUsed": "31",
+        "LabelId": "76",
+        "SeqNoStrLast": "0",
+        "SumFee": "92",
+        "districtCode": "1",
+        "AsRowid": "3175||1457",
+        "schedulid": "140664",
+        "districtInfo": {
+          "name": "华西院区",
+          "address": "四川省成都市人民南路三段20号"
+        },
+        "week": "星期一",
+        "reason": "",
+        "onlyOfflineReg": 0,
+        "usable": 0
+      },
+      {
+        "SessionType": "一级专家",
+        "deptId": "997",
+        "deptName": "产科门诊",
+        "date": "2021-11-10",
+        "period": "上午",
+        "SeqNoStrUsed": "48",
+        "LabelId": "0",
+        "SeqNoStrLast": "0",
+        "SumFee": "92",
+        "districtCode": "1",
+        "AsRowid": "3175||1462",
+        "schedulid": "141155",
+        "districtInfo": {
+          "name": "华西院区",
+          "address": "四川省成都市人民南路三段20号"
+        },
+        "week": "星期三",
+        "reason": "",
+        "onlyOfflineReg": 0,
+        "usable": 0
+      },
+      {
+        "SessionType": "一级专家",
+        "deptId": "0",
+        "deptName": "胎盘疾病专科门诊",
+        "date": "2021-11-10",
+        "period": "上午",
+        "SeqNoStrUsed": "47",
+        "LabelId": "77",
+        "SeqNoStrLast": "0",
+        "SumFee": "92",
+        "districtCode": "1",
+        "AsRowid": "3175||1462",
+        "schedulid": "141290",
+        "districtInfo": {
+          "name": "华西院区",
+          "address": "四川省成都市人民南路三段20号"
+        },
+        "week": "星期三",
+        "reason": "",
+        "onlyOfflineReg": 0,
+        "usable": 0
+      },
+      {
+        "SessionType": "一级专家",
+        "deptId": "997",
+        "deptName": "产科门诊",
+        "date": "2021-11-15",
+        "period": "上午",
+        "SeqNoStrUsed": "27",
+        "LabelId": "0",
+        "SeqNoStrLast": "0",
+        "SumFee": "92",
+        "districtCode": "1",
+        "AsRowid": "3175||1458",
+        "schedulid": "141645",
+        "districtInfo": {
+          "name": "华西院区",
+          "address": "四川省成都市人民南路三段20号"
+        },
+        "week": "星期一",
+        "reason": "",
+        "onlyOfflineReg": 0,
+        "usable": 0
+      },
+      {
+        "SessionType": "一级专家",
+        "deptId": "0",
+        "deptName": "妊娠并发症专科门诊",
+        "date": "2021-11-15",
+        "period": "上午",
+        "SeqNoStrUsed": "27",
+        "LabelId": "76",
+        "SeqNoStrLast": "0",
+        "SumFee": "92",
+        "districtCode": "1",
+        "AsRowid": "3175||1458",
+        "schedulid": "141797",
+        "districtInfo": {
+          "name": "华西院区",
+          "address": "四川省成都市人民南路三段20号"
+        },
+        "week": "星期一",
+        "reason": "",
+        "onlyOfflineReg": 0,
+        "usable": 0
+      }
+    ]
+  }
 }

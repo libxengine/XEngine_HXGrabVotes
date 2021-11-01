@@ -55,7 +55,7 @@ void CDialog_PICVer::OnBnClickedButton1()
 	memset(tszBodyBuffer, '\0', sizeof(tszBodyBuffer));
 	memset(tszItemText, '\0', sizeof(tszItemText));
 
-	((CXEngineGrabVotesDlg*)AfxGetMainWnd())->m_EditDistinctid.GetWindowText(m_StrDistinctID);
+	((CXEngineGrabVotesDlg*)AfxGetApp()->m_pMainWnd)->m_EditDistinctid.GetWindowText(m_StrDistinctID);
 
 	LPCTSTR lpszUrl = _T("https://huaxi2.mobimedical.cn/index.php?g=WapApi&m=Register&a=submitReg");
 	_stprintf_s(tszHdrBuffer, _T("Host: huaxi2.mobimedical.cn\r\n"
@@ -76,18 +76,24 @@ void CDialog_PICVer::OnBnClickedButton1()
 	CString m_StrDoctorID;
 	CString m_StrUserID;
 	CString m_StrWXID;
-	HTREEITEM hRoot = ((CXEngineGrabVotesDlg*)AfxGetMainWnd())->m_TreeHospital.GetSelectedItem();
+	HTREEITEM hRoot = ((CXEngineGrabVotesDlg*)AfxGetApp()->m_pMainWnd)->m_TreeHospital.GetSelectedItem();
 	if (NULL == hRoot)
 	{
 		AfxMessageBox(_T("没有选择部门,无法继续"));
 		return;
 	}
-	XENGINE_DEPARTMENTINFO* pSt_Department = (XENGINE_DEPARTMENTINFO*)((CXEngineGrabVotesDlg*)AfxGetMainWnd())->m_TreeHospital.GetItemData(hRoot);
+	XENGINE_DEPARTMENTINFO* pSt_Department = (XENGINE_DEPARTMENTINFO*)((CXEngineGrabVotesDlg*)AfxGetApp()->m_pMainWnd)->m_TreeHospital.GetItemData(hRoot);
 
-	pm_DialogDoctor[((CXEngineGrabVotesDlg*)AfxGetMainWnd())->m_TabDay.GetCurSel()].m_EditSchedule.GetWindowText(m_StrSchedule);
-	pm_DialogDoctor[((CXEngineGrabVotesDlg*)AfxGetMainWnd())->m_TabDay.GetCurSel()].m_EditCode.GetWindowText(m_StrDoctorID);
-	pm_DialogDoctor[((CXEngineGrabVotesDlg*)AfxGetMainWnd())->m_TabDay.GetCurSel()].m_EditProUserID.GetWindowText(m_StrUserID);
-	pm_DialogDoctor[((CXEngineGrabVotesDlg*)AfxGetMainWnd())->m_TabDay.GetCurSel()].m_EditWXID.GetWindowText(m_StrWXID);
+	POSITION pSt_PosItem = pm_DialogDoctor[((CXEngineGrabVotesDlg*)AfxGetApp()->m_pMainWnd)->m_TabDay.GetCurSel()].m_ListInfo.GetFirstSelectedItemPosition();
+	if (NULL == pSt_PosItem)
+	{
+		return;
+	}
+	m_StrSchedule = pm_DialogDoctor[((CXEngineGrabVotesDlg*)AfxGetApp()->m_pMainWnd)->m_TabDay.GetCurSel()].m_ListInfo.GetItemText(pm_DialogDoctor[((CXEngineGrabVotesDlg*)AfxGetApp()->m_pMainWnd)->m_TabDay.GetCurSel()].m_ListInfo.GetNextSelectedItem(pSt_PosItem), 4);
+
+	pm_DialogDoctor[((CXEngineGrabVotesDlg*)AfxGetApp()->m_pMainWnd)->m_TabDay.GetCurSel()].m_EditCode.GetWindowText(m_StrDoctorID);
+	pm_DialogDoctor[((CXEngineGrabVotesDlg*)AfxGetApp()->m_pMainWnd)->m_TabDay.GetCurSel()].m_EditProUserID.GetWindowText(m_StrUserID);
+	pm_DialogDoctor[((CXEngineGrabVotesDlg*)AfxGetApp()->m_pMainWnd)->m_TabDay.GetCurSel()].m_EditWXID.GetWindowText(m_StrWXID);
 
 	BOOL bFirst = TRUE;
 	TCHAR tszMousePoint[MAX_PATH];

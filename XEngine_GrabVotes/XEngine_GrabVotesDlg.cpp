@@ -62,6 +62,8 @@ BOOL CXEngineGrabVotesDlg::OnInitDialog()
 	memset(tszMsgBuffer, '\0', sizeof(tszMsgBuffer));
 	GetPrivateProfileString("Info", "cookie", NULL, tszMsgBuffer, sizeof(tszMsgBuffer), lpszFile);
 	m_EditDistinctid.SetWindowText(tszMsgBuffer);
+
+	APIHelp_HttpRequest_SetGlobalTime(3, 3);
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
 }
 
@@ -386,6 +388,14 @@ BOOL CXEngineGrabVotesDlg::XEngine_GrabVotes_Post(int nSelected)
 	APIHelp_HttpRequest_Post(lpszUrl, tszMsgBuffer, &nResponseCode, &ptszMsgBuffer, &nMsgLen, tszHdrBuffer);
 	BaseLib_OperatorString_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
 	
+	TCHAR tszFileName[MAX_PATH];
+	memset(tszFileName, '\0', MAX_PATH);
+
+	_stprintf(tszFileName, _T("D:\\XEngine_HXGrabVotes\\Debug\\%s.json"), tszItemText);
+	FILE* pSt_File = _tfopen(tszFileName, _T("wb"));
+	fwrite(ptszGBKBuffer, 1, nMsgLen, pSt_File);
+	fclose(pSt_File);
+
 	Json::Value st_JsonRoot;
 	Json::CharReaderBuilder st_JsonBuild;
 	JSONCPP_STRING st_JsonError;
@@ -466,10 +476,10 @@ BOOL CXEngineGrabVotesDlg::XEngine_GrabVotes_Post(int nSelected)
 		memset(tszItemBuffer, '\0', MAX_PATH);
 
 		_stprintf_s(tszItemBuffer, _T("%d"), i);
-		pm_DialogDoctor[m_TabDay.GetCurSel()].m_ListDoctor.InsertItem(i, tszItemBuffer);
-		pm_DialogDoctor[m_TabDay.GetCurSel()].m_ListDoctor.SetItemText(i, 1, pSt_DoctorInfo->tszDoctorName);
-		pm_DialogDoctor[m_TabDay.GetCurSel()].m_ListDoctor.SetItemText(i, 2, st_JsonArray[i]["period"].asCString());
-		pm_DialogDoctor[m_TabDay.GetCurSel()].m_ListDoctor.SetItemData(i, (DWORD_PTR)pSt_DoctorInfo);
+		pm_DialogDoctor[nSelected].m_ListDoctor.InsertItem(i, tszItemBuffer);
+		pm_DialogDoctor[nSelected].m_ListDoctor.SetItemText(i, 1, pSt_DoctorInfo->tszDoctorName);
+		pm_DialogDoctor[nSelected].m_ListDoctor.SetItemText(i, 2, st_JsonArray[i]["period"].asCString());
+		pm_DialogDoctor[nSelected].m_ListDoctor.SetItemData(i, (DWORD_PTR)pSt_DoctorInfo);
 	}
 	free(ptszGBKBuffer);
 	BaseLib_OperatorMemory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
