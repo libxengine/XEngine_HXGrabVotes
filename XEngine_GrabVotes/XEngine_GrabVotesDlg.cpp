@@ -391,7 +391,11 @@ BOOL CXEngineGrabVotesDlg::XEngine_GrabVotes_Post(int nSelected)
 	TCHAR tszFileName[MAX_PATH];
 	memset(tszFileName, '\0', MAX_PATH);
 
+#ifdef _DEBUG
 	_stprintf(tszFileName, _T("D:\\XEngine_HXGrabVotes\\Debug\\%s.json"), tszItemText);
+#else
+	_stprintf(tszFileName, _T("./%s.json"), tszItemText);
+#endif
 	FILE* pSt_File = _tfopen(tszFileName, _T("wb"));
 	fwrite(ptszGBKBuffer, 1, nMsgLen, pSt_File);
 	fclose(pSt_File);
