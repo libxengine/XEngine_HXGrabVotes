@@ -1,39 +1,52 @@
-# XEngine_HXGrabVotes
+# XEngine_MQService
+本仓库有开发和主分支,如果要使用,请使用master分支下的代码  
+只要仓库不是在暂停状态,那么就会有人一直维护和开发,请放心使用
 
-#### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+## 介绍
+华西医院抢票软件
 
-#### 软件架构
-软件架构说明
+## 软件架构
+此软件基于XEngine开发.采用C/C++作为开发语言  
 
+## 安装教程
 
-#### 安装教程
+#### XEngine环境
+必须安装XEngine,版本需要V8.15或者以上版本,安装XEngine可以参考其Readme文档  
+GITEE:https://gitee.com/xyry/libxengine  
+GITHUB:https://github.com/libxengine/xengine
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+##### 快速部署
+git clone https://gitee.com/xyry/libxengine.git 或者 git clone https://github.com/libxengine/xengine.git  
+window执行XEngine_WINEnv.bat 脚本
+
+#### Windows
+使用VS打开并且编译,支持WINDOWS 7SP1以上系统  
+直接运行即可
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  切换到MASTER分支
+2.  下载代码
+3.  编译
+4.  安装
+5.  运行
+6.  运行演示代码
 
-#### 参与贡献
+## 目录结构
+- XEngine_Docment  文档目录结构  
+- XEngine_Release  安装目录结构  
+- XEngine_Source   源代目录结构  
+
+## 参与贡献
 
 1.  Fork 本仓库
 2.  新建 Feat_xxx 分支
 3.  提交代码
-4.  新建 Pull Request
+4.  新建 Pull Request  
 
+## 关注我们
+如果你觉得这个软件对你有帮助,请你给我们一个START吧
 
-#### 特技
+## 提交问题
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+如果你有问题,可以在issues中提交
