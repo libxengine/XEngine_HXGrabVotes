@@ -114,8 +114,8 @@ void CDialog_PICVer::OnBnClickedButton1()
 	}
 	stl_ListMouse.clear();
 	_stprintf_s(tszBodyBuffer, _T("tagArray=%s&schedulid=%s&deptId=%d&userid=%s&is_ai=&token=%s"), tszMousePoint, m_StrSchedule.GetBuffer(), pSt_Department->nDepId, m_StrUserID.GetBuffer(), m_StrWXID.GetBuffer());
-	APIHelp_HttpRequest_Post(lpszUrl, tszBodyBuffer, &nResponseCode, &ptszMsgBuffer, &nMsgLen, tszHdrBuffer);
-	BaseLib_OperatorString_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
+	APIClient_Http_Request(_X("POST"), lpszUrl, tszBodyBuffer, &nResponseCode, &ptszMsgBuffer, &nMsgLen, tszHdrBuffer);
+	BaseLib_OperatorCharset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
 
 	Json::Value st_JsonRoot;
 	Json::CharReaderBuilder st_JsonBuild;

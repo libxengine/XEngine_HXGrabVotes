@@ -16,8 +16,8 @@
 #include <XEngine_Include/XEngine_CommHdr.h>
 #include <XEngine_Include/XEngine_BaseLib/BaseLib_Define.h>
 #include <XEngine_Include/XEngine_BaseLib/BaseLib_Error.h>
-#include <XEngine_Include/XEngine_NetHelp/APIHelp_Define.h>
-#include <XEngine_Include/XEngine_NetHelp/APIHelp_Error.h>
+#include <XEngine_Include/XEngine_NetHelp/APIClient_Define.h>
+#include <XEngine_Include/XEngine_NetHelp/APIClient_Error.h>
 using namespace std;
 #include "CDialog_DayDoctor.h"
 #include "CDialog_PICVer.h"
@@ -43,5 +43,12 @@ typedef struct
 }XENGINE_DOCTORINFO;
 
 extern CDialog_DayDoctor* pm_DialogDoctor;
+
+
 #pragma comment(lib,"XEngine_BaseLib/XEngine_BaseLib")
-#pragma comment(lib,"XEngine_NetHelp/NetHelp_APIHelp")
+#pragma comment(lib,"XEngine_NetHelp/NetHelp_APIClient")
+#ifdef _DEBUG
+#pragma comment(lib,"../Debug/jsoncpp")
+#else
+#pragma comment(lib,"../Release/jsoncpp")
+#endif

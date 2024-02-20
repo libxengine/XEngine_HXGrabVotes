@@ -62,8 +62,6 @@ BOOL CXEngineGrabVotesDlg::OnInitDialog()
 	memset(tszMsgBuffer, '\0', sizeof(tszMsgBuffer));
 	GetPrivateProfileString("Info", "cookie", NULL, tszMsgBuffer, sizeof(tszMsgBuffer), lpszFile);
 	m_EditDistinctid.SetWindowText(tszMsgBuffer);
-
-	APIHelp_HttpRequest_SetGlobalTime(3, 3);
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
 }
 
@@ -138,8 +136,8 @@ void CXEngineGrabVotesDlg::OnBnClickedButton1()
 		return;
 	}
 	memset(ptszGBKBuffer, '\0', 1024000);
-	APIHelp_HttpRequest_Get(lpszUrl, &ptszMsgBuffer, &nMsgLen, &nResponseCode, tszHdrBuffer);
-	BaseLib_OperatorString_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
+	APIClient_Http_Request(_X("GET"), lpszUrl, NULL, &nResponseCode, &ptszMsgBuffer, &nMsgLen, tszHdrBuffer);
+	BaseLib_OperatorCharset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
 	BaseLib_OperatorMemory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
 
 	Json::Value st_JsonRoot;
@@ -276,8 +274,8 @@ void CXEngineGrabVotesDlg::OnBnClickedButton2()
 		return;
 	}
 	memset(ptszGBKBuffer, '\0', 1024000);
-	APIHelp_HttpRequest_Get(lpszUrl, &ptszMsgBuffer, &nMsgLen, &nResponseCode, tszHdrBuffer);
-	BaseLib_OperatorString_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
+	APIClient_Http_Request(_X("GET"), lpszUrl, NULL, &nResponseCode, &ptszMsgBuffer, &nMsgLen, tszHdrBuffer);
+	BaseLib_OperatorCharset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
 	BaseLib_OperatorMemory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
 
 	Json::Value st_JsonRoot;
@@ -385,9 +383,8 @@ BOOL CXEngineGrabVotesDlg::XEngine_GrabVotes_Post(int nSelected)
 	st_TCItem.mask = TCIF_TEXT;
 	m_TabDay.GetItem(nSelected, &st_TCItem);
 	_stprintf_s(tszMsgBuffer, _T("deptId=%d&date=%s&SessionType=&LabelId=%d&districtCode=%d"), pSt_Department->nDepId, tszItemText, pSt_Department->nLabelId, pSt_Department->nDistrictCode);
-	APIHelp_HttpRequest_Post(lpszUrl, tszMsgBuffer, &nResponseCode, &ptszMsgBuffer, &nMsgLen, tszHdrBuffer);
-	BaseLib_OperatorString_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
-	
+	APIClient_Http_Request(_X("POST"), lpszUrl, tszMsgBuffer, &nResponseCode, &ptszMsgBuffer, &nMsgLen, tszHdrBuffer);
+	BaseLib_OperatorCharset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
 	TCHAR tszFileName[MAX_PATH];
 	memset(tszFileName, '\0', MAX_PATH);
 

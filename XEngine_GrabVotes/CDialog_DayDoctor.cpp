@@ -120,8 +120,8 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetInfo()
 	m_StrScheudleID = m_ListInfo.GetItemText(nSelect, 4);
 
 	_stprintf_s(tszMsgBuffer, _T("doctorid=%s&date=%s&LabelId=%s&districtCode=%s"), m_StrDoctorID.GetBuffer(), tszItemText, m_StrLabelID.GetBuffer(), m_StrScheudleID.GetBuffer());
-	APIHelp_HttpRequest_Post(lpszUrl, tszMsgBuffer, &nResponseCode, &ptszMsgBuffer, &nMsgLen, tszHdrBuffer);
-	BaseLib_OperatorString_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
+	APIClient_Http_Request(_X("POST"), lpszUrl, tszMsgBuffer, &nResponseCode, &ptszMsgBuffer, &nMsgLen, tszHdrBuffer);
+	BaseLib_OperatorCharset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
 
 	Json::Value st_JsonRoot;
 	Json::CharReaderBuilder st_JsonBuild;
@@ -201,9 +201,9 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetWXID()
 		"Referer: https://huaxi2.mobimedical.cn/index.php?g=Wap&m=WxView&d=registerAndAppoint&a=index\r\n"
 		"Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7\r\n"
 	), m_StrDistinctID.GetBuffer());
-
-	APIHelp_HttpRequest_Get(tszUrlBuffer, &ptszMsgBuffer, &nMsgLen, &nResponseCode, tszHdrBuffer);
-	BaseLib_OperatorString_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
+	
+	APIClient_Http_Request(_X("GET"), tszUrlBuffer, NULL, &nResponseCode, &ptszMsgBuffer, &nMsgLen, tszHdrBuffer);
+	BaseLib_OperatorCharset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
 
 	Json::Value st_JsonRoot;
 	Json::CharReaderBuilder st_JsonBuild;
@@ -285,7 +285,8 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetVer()
 		"Referer: https://huaxi2.mobimedical.cn/index.php?g=Wap&m=WxView&d=registerAndAppoint&a=index\r\n"
 		"Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7\r\n"
 	), m_StrDistinctID.GetBuffer());
-	APIHelp_HttpRequest_Get(lpszUrl, &ptszMsgBuffer, &nMsgLen, &nResponseCode, tszHdrBuffer);
+
+	APIClient_Http_Request(_X("GET"), lpszUrl, NULL, &nResponseCode, &ptszMsgBuffer, &nMsgLen, tszHdrBuffer);
 	if (nMsgLen <= 0)
 	{
 		AfxMessageBox(_T("获取验证图片失败"));
@@ -394,8 +395,8 @@ void CDialog_DayDoctor::OnNMClickList1(NMHDR* pNMHDR, LRESULT* pResult)
 	m_EditCode.GetWindowText(m_StrDoctorID);
 
 	_stprintf_s(tszMsgBuffer, _T("doctorid=%s&date=%s&LabelId=0&districtCode=%d"), m_StrDoctorID.GetBuffer(), tszItemText, pSt_DoctorInfo->nDistrictCode);
-	APIHelp_HttpRequest_Post(lpszUrl, tszMsgBuffer, &nResponseCode, &ptszMsgBuffer, &nMsgLen, tszHdrBuffer);
-	BaseLib_OperatorString_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
+	APIClient_Http_Request(_X("POST"), lpszUrl, tszMsgBuffer, &nResponseCode, &ptszMsgBuffer, &nMsgLen, tszHdrBuffer);
+	BaseLib_OperatorCharset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
 
 	Json::Value st_JsonRoot;
 	Json::CharReaderBuilder st_JsonBuild;
