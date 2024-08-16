@@ -107,14 +107,15 @@ void CDialog_PICVer::OnBnClickedButton1()
 
 		if (!bFirst)
 		{
-			_tcscat(tszMousePoint, "%3B");
+			_tcscat(tszMousePoint, _T("%3B"));
 		}
 		_tcscat(tszMousePoint, tszPointer);
 		bFirst = FALSE;
 	}
 	stl_ListMouse.clear();
 	_stprintf_s(tszBodyBuffer, _T("tagArray=%s&schedulid=%s&deptId=%d&userid=%s&is_ai=&token=%s"), tszMousePoint, m_StrSchedule.GetBuffer(), pSt_Department->nDepId, m_StrUserID.GetBuffer(), m_StrWXID.GetBuffer());
-	APIClient_Http_Request(_X("POST"), lpszUrl, tszBodyBuffer, &nResponseCode, &ptszMsgBuffer, &nMsgLen, tszHdrBuffer);
+	USES_CONVERSION;
+	APIClient_Http_Request(_X("POST"), W2A(lpszUrl), W2A(tszBodyBuffer), &nResponseCode, &ptszMsgBuffer, &nMsgLen, W2A(tszHdrBuffer));
 	BaseLib_OperatorCharset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
 
 	Json::Value st_JsonRoot;
@@ -132,7 +133,7 @@ void CDialog_PICVer::OnBnClickedButton1()
 	BOOL bRet = TRUE;
 	if (Json::stringValue == st_JsonRoot["state"].type())
 	{
-		if (1 != _ttoi(st_JsonRoot["state"].asCString()))
+		if (1 != atoi(st_JsonRoot["state"].asCString()))
 		{
 			bRet = FALSE;
 		}
@@ -145,7 +146,7 @@ void CDialog_PICVer::OnBnClickedButton1()
 		}
 	}
 
-	AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
+	AfxMessageBox(A2W(st_JsonRoot["errorMsg"].asCString()));
 	free(ptszGBKBuffer);
 	BaseLib_OperatorMemory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
 

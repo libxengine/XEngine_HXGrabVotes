@@ -60,7 +60,7 @@ BOOL CXEngineGrabVotesDlg::OnInitDialog()
 #endif
 	TCHAR tszMsgBuffer[1024];
 	memset(tszMsgBuffer, '\0', sizeof(tszMsgBuffer));
-	GetPrivateProfileString("Info", "cookie", NULL, tszMsgBuffer, sizeof(tszMsgBuffer), lpszFile);
+	GetPrivateProfileString(_T("Info"), _T("cookie"), NULL, tszMsgBuffer, sizeof(tszMsgBuffer), lpszFile);
 	m_EditDistinctid.SetWindowText(tszMsgBuffer);
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
 }
@@ -136,7 +136,8 @@ void CXEngineGrabVotesDlg::OnBnClickedButton1()
 		return;
 	}
 	memset(ptszGBKBuffer, '\0', 1024000);
-	APIClient_Http_Request(_X("GET"), lpszUrl, NULL, &nResponseCode, &ptszMsgBuffer, &nMsgLen, tszHdrBuffer);
+	USES_CONVERSION;
+	APIClient_Http_Request(_X("GET"), W2A(lpszUrl), NULL, &nResponseCode, &ptszMsgBuffer, &nMsgLen, W2A(tszHdrBuffer));
 	BaseLib_OperatorCharset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
 	BaseLib_OperatorMemory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
 
@@ -154,9 +155,9 @@ void CXEngineGrabVotesDlg::OnBnClickedButton1()
 
 	if (Json::stringValue == st_JsonRoot["state"].type())
 	{
-		if (1 != _ttoi(st_JsonRoot["state"].asCString()))
+		if (1 != atoi(st_JsonRoot["state"].asCString()))
 		{
-			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
+			AfxMessageBox(A2W(st_JsonRoot["errorMsg"].asCString()));
 			free(ptszGBKBuffer);
 			return;
 		}
@@ -165,7 +166,7 @@ void CXEngineGrabVotesDlg::OnBnClickedButton1()
 	{
 		if (1 != st_JsonRoot["state"].asInt())
 		{
-			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
+			AfxMessageBox(A2W(st_JsonRoot["errorMsg"].asCString()));
 			free(ptszGBKBuffer);
 			return;
 		}
@@ -176,40 +177,40 @@ void CXEngineGrabVotesDlg::OnBnClickedButton1()
 	for (unsigned int i = 0; stl_HospitalIterator != st_JsonRootMember.end(); stl_HospitalIterator++, i++)
 	{
 		Json::Value st_JsonArray = st_JsonRoot["data"][stl_HospitalIterator->c_str()];
-		HTREEITEM hRoot = m_TreeHospital.InsertItem(stl_HospitalIterator->c_str(), 1, 0, TVI_ROOT);
+		HTREEITEM hRoot = m_TreeHospital.InsertItem(A2W(stl_HospitalIterator->c_str()), 1, 0, TVI_ROOT);
 
 		Json::Value::Members st_JsonSubMember = st_JsonArray.getMemberNames();
 		Json::Value::Members::iterator stl_DepartmentIterator = st_JsonSubMember.begin();
 		for (unsigned int j = 0; stl_DepartmentIterator != st_JsonSubMember.end(); stl_DepartmentIterator++, j++)
 		{
 			Json::Value st_JsonDepartment = st_JsonArray[stl_DepartmentIterator->c_str()];
-			HTREEITEM hDepartment = m_TreeHospital.InsertItem(st_JsonDepartment["deptName"].asCString(), 1, 0, hRoot);
+			HTREEITEM hDepartment = m_TreeHospital.InsertItem(A2W(st_JsonDepartment["deptName"].asCString()), 1, 0, hRoot);
 
 			Json::Value::Members st_JsonNodeMember = st_JsonDepartment["tree"].getMemberNames();
 			Json::Value::Members::iterator stl_NodeIterator = st_JsonNodeMember.begin();
 			for (unsigned int k = 0; stl_NodeIterator != st_JsonNodeMember.end(); stl_NodeIterator++, k++)
 			{
 				Json::Value st_JsonNode = st_JsonDepartment["tree"][stl_NodeIterator->c_str()];
-				HTREEITEM hNode = m_TreeHospital.InsertItem(st_JsonNode["deptName"].asCString(), 1, 0, hDepartment);
+				HTREEITEM hNode = m_TreeHospital.InsertItem(A2W(st_JsonNode["deptName"].asCString()), 1, 0, hDepartment);
 
 				XENGINE_DEPARTMENTINFO* pSt_DepartmentInfo = new XENGINE_DEPARTMENTINFO;
 				memset(pSt_DepartmentInfo, '\0', sizeof(XENGINE_DEPARTMENTINFO));
 
 				if (!st_JsonNode["deptName"].isNull())
 				{
-					_tcscpy(pSt_DepartmentInfo->tszDepName, st_JsonNode["deptName"].asCString());
+					_tcscpy(pSt_DepartmentInfo->tszDepName, A2W(st_JsonNode["deptName"].asCString()));
 				}
 				if (!st_JsonNode["deptId"].isNull())
 				{
-					pSt_DepartmentInfo->nDepId = _ttoi(st_JsonNode["deptId"].asCString());
+					pSt_DepartmentInfo->nDepId = atoi(st_JsonNode["deptId"].asCString());
 				}
 				if (!st_JsonNode["LabelId"].isNull())
 				{
-					pSt_DepartmentInfo->nLabelId = _ttoi(st_JsonNode["LabelId"].asCString());
+					pSt_DepartmentInfo->nLabelId = atoi(st_JsonNode["LabelId"].asCString());
 				}
 				if (!st_JsonNode["districtCode"].isNull())
 				{
-					pSt_DepartmentInfo->nDistrictCode = _ttoi(st_JsonNode["districtCode"].asCString());
+					pSt_DepartmentInfo->nDistrictCode = atoi(st_JsonNode["districtCode"].asCString());
 				}
 
 				m_TreeHospital.SetItemData(hNode, (DWORD_PTR)pSt_DepartmentInfo);
@@ -274,7 +275,9 @@ void CXEngineGrabVotesDlg::OnBnClickedButton2()
 		return;
 	}
 	memset(ptszGBKBuffer, '\0', 1024000);
-	APIClient_Http_Request(_X("GET"), lpszUrl, NULL, &nResponseCode, &ptszMsgBuffer, &nMsgLen, tszHdrBuffer);
+
+	USES_CONVERSION;
+	APIClient_Http_Request(_X("GET"), W2A(lpszUrl), NULL, &nResponseCode, &ptszMsgBuffer, &nMsgLen, W2A(tszHdrBuffer));
 	BaseLib_OperatorCharset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
 	BaseLib_OperatorMemory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
 
@@ -291,9 +294,9 @@ void CXEngineGrabVotesDlg::OnBnClickedButton2()
 	}
 	if (Json::stringValue == st_JsonRoot["state"].type())
 	{
-		if (1 != _ttoi(st_JsonRoot["state"].asCString()))
+		if (1 != atoi(st_JsonRoot["state"].asCString()))
 		{
-			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
+			AfxMessageBox(A2W(st_JsonRoot["errorMsg"].asCString()));
 			free(ptszGBKBuffer);
 			return;
 		}
@@ -302,7 +305,7 @@ void CXEngineGrabVotesDlg::OnBnClickedButton2()
 	{
 		if (1 != st_JsonRoot["state"].asInt())
 		{
-			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
+			AfxMessageBox(A2W(st_JsonRoot["errorMsg"].asCString()));
 			free(ptszGBKBuffer);
 			return;
 		}
@@ -312,7 +315,7 @@ void CXEngineGrabVotesDlg::OnBnClickedButton2()
 
 	for (unsigned int i = 0; i < st_JsonArray.size(); i++)
 	{
-		m_TabDay.InsertItem(i, st_JsonArray[i]["date"].asCString());
+		m_TabDay.InsertItem(i, A2W(st_JsonArray[i]["date"].asCString()));
 		pm_DialogDoctor[i].Create(IDD_DIALOG1, &m_TabDay);
 
 		CRect st_Rect;
@@ -383,7 +386,8 @@ BOOL CXEngineGrabVotesDlg::XEngine_GrabVotes_Post(int nSelected)
 	st_TCItem.mask = TCIF_TEXT;
 	m_TabDay.GetItem(nSelected, &st_TCItem);
 	_stprintf_s(tszMsgBuffer, _T("deptId=%d&date=%s&SessionType=&LabelId=%d&districtCode=%d"), pSt_Department->nDepId, tszItemText, pSt_Department->nLabelId, pSt_Department->nDistrictCode);
-	APIClient_Http_Request(_X("POST"), lpszUrl, tszMsgBuffer, &nResponseCode, &ptszMsgBuffer, &nMsgLen, tszHdrBuffer);
+	USES_CONVERSION;
+	APIClient_Http_Request(_X("POST"), W2A(lpszUrl), W2A(tszMsgBuffer), &nResponseCode, &ptszMsgBuffer, &nMsgLen, W2A(tszHdrBuffer));
 	BaseLib_OperatorCharset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
 	TCHAR tszFileName[MAX_PATH];
 	memset(tszFileName, '\0', MAX_PATH);
@@ -410,9 +414,9 @@ BOOL CXEngineGrabVotesDlg::XEngine_GrabVotes_Post(int nSelected)
 	}
 	if (Json::stringValue == st_JsonRoot["state"].type())
 	{
-		if (1 != _ttoi(st_JsonRoot["state"].asCString()))
+		if (1 != atoi(st_JsonRoot["state"].asCString()))
 		{
-			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
+			AfxMessageBox(A2W(st_JsonRoot["errorMsg"].asCString()));
 			free(ptszGBKBuffer);
 			return FALSE;
 		}
@@ -421,7 +425,7 @@ BOOL CXEngineGrabVotesDlg::XEngine_GrabVotes_Post(int nSelected)
 	{
 		if (1 != st_JsonRoot["state"].asInt())
 		{
-			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
+			AfxMessageBox(A2W(st_JsonRoot["errorMsg"].asCString()));
 			free(ptszGBKBuffer);
 			return FALSE;
 		}
@@ -434,12 +438,12 @@ BOOL CXEngineGrabVotesDlg::XEngine_GrabVotes_Post(int nSelected)
 
 		if (!st_JsonArray[i]["docName"].isNull())
 		{
-			_tcscpy(pSt_DoctorInfo->tszDoctorName, st_JsonArray[i]["docName"].asCString());
+			_tcscpy(pSt_DoctorInfo->tszDoctorName, A2W(st_JsonArray[i]["docName"].asCString()));
 		}
 
 		if (Json::ValueType::stringValue == st_JsonArray[i]["districtCode"].type())
 		{
-			pSt_DoctorInfo->nDistrictCode = _ttoi(st_JsonArray[i]["districtCode"].asCString());
+			pSt_DoctorInfo->nDistrictCode = atoi(st_JsonArray[i]["districtCode"].asCString());
 		}
 		else
 		{
@@ -448,7 +452,7 @@ BOOL CXEngineGrabVotesDlg::XEngine_GrabVotes_Post(int nSelected)
 
 		if (Json::ValueType::stringValue == st_JsonArray[i]["doctorid"].type())
 		{
-			_tcscpy(pSt_DoctorInfo->tszDoctorID, st_JsonArray[i]["doctorid"].asCString());
+			_tcscpy(pSt_DoctorInfo->tszDoctorID, A2W(st_JsonArray[i]["doctorid"].asCString()));
 		}
 		else
 		{
@@ -457,16 +461,16 @@ BOOL CXEngineGrabVotesDlg::XEngine_GrabVotes_Post(int nSelected)
 
 		if (!st_JsonArray[i]["begoodat"].isNull())
 		{
-			_tcscpy(pSt_DoctorInfo->tszDoctorGoodAt, st_JsonArray[i]["begoodat"].asCString());
+			_tcscpy(pSt_DoctorInfo->tszDoctorGoodAt, A2W(st_JsonArray[i]["begoodat"].asCString()));
 		}
 		if (!st_JsonArray[i]["SessionType"].isNull())
 		{
-			_tcscpy(pSt_DoctorInfo->tszDoctorType, st_JsonArray[i]["SessionType"].asCString());
+			_tcscpy(pSt_DoctorInfo->tszDoctorType, A2W(st_JsonArray[i]["SessionType"].asCString()));
 		}
 
 		if (Json::ValueType::stringValue == st_JsonArray[i]["SeqNoStrLast"].type())
 		{
-			_tcscpy(pSt_DoctorInfo->tszDoctorTicket, st_JsonArray[i]["SeqNoStrLast"].asCString());
+			_tcscpy(pSt_DoctorInfo->tszDoctorTicket, A2W(st_JsonArray[i]["SeqNoStrLast"].asCString()));
 		}
 		else
 		{
@@ -479,7 +483,7 @@ BOOL CXEngineGrabVotesDlg::XEngine_GrabVotes_Post(int nSelected)
 		_stprintf_s(tszItemBuffer, _T("%d"), i);
 		pm_DialogDoctor[nSelected].m_ListDoctor.InsertItem(i, tszItemBuffer);
 		pm_DialogDoctor[nSelected].m_ListDoctor.SetItemText(i, 1, pSt_DoctorInfo->tszDoctorName);
-		pm_DialogDoctor[nSelected].m_ListDoctor.SetItemText(i, 2, st_JsonArray[i]["period"].asCString());
+		pm_DialogDoctor[nSelected].m_ListDoctor.SetItemText(i, 2, A2W(st_JsonArray[i]["period"].asCString()));
 		pm_DialogDoctor[nSelected].m_ListDoctor.SetItemData(i, (DWORD_PTR)pSt_DoctorInfo);
 	}
 	free(ptszGBKBuffer);

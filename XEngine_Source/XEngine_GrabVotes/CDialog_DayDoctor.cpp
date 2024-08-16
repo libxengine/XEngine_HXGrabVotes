@@ -120,7 +120,8 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetInfo()
 	m_StrScheudleID = m_ListInfo.GetItemText(nSelect, 4);
 
 	_stprintf_s(tszMsgBuffer, _T("doctorid=%s&date=%s&LabelId=%s&districtCode=%s"), m_StrDoctorID.GetBuffer(), tszItemText, m_StrLabelID.GetBuffer(), m_StrScheudleID.GetBuffer());
-	APIClient_Http_Request(_X("POST"), lpszUrl, tszMsgBuffer, &nResponseCode, &ptszMsgBuffer, &nMsgLen, tszHdrBuffer);
+	USES_CONVERSION;
+	APIClient_Http_Request("POST", W2A(lpszUrl), W2A(tszMsgBuffer), &nResponseCode, &ptszMsgBuffer, &nMsgLen, W2A(tszHdrBuffer));
 	BaseLib_OperatorCharset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
 
 	Json::Value st_JsonRoot;
@@ -136,9 +137,9 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetInfo()
 	}
 	if (Json::stringValue == st_JsonRoot["state"].type())
 	{
-		if (1 != _ttoi(st_JsonRoot["state"].asCString()))
+		if (1 != atoi(st_JsonRoot["state"].asCString()))
 		{
-			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
+			AfxMessageBox(A2W(st_JsonRoot["errorMsg"].asCString()));
 			free(ptszGBKBuffer);
 			return FALSE;
 		}
@@ -147,7 +148,7 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetInfo()
 	{
 		if (1 != st_JsonRoot["state"].asInt())
 		{
-			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
+			AfxMessageBox(A2W(st_JsonRoot["errorMsg"].asCString()));
 			free(ptszGBKBuffer);
 			return FALSE;
 		}
@@ -155,8 +156,8 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetInfo()
 	Json::Value st_JsonObejct = st_JsonRoot["data"];
 	Json::Value st_JsonArray = st_JsonObejct["cardList"];
 
-	m_EditProName.SetWindowText(st_JsonArray[0]["userName"].asCString());
-	m_EditProUserID.SetWindowText(st_JsonArray[0]["userid"].asCString());
+	m_EditProName.SetWindowText(A2W(st_JsonArray[0]["userName"].asCString()));
+	m_EditProUserID.SetWindowText(A2W(st_JsonArray[0]["userid"].asCString()));
 
 	free(ptszGBKBuffer);
 	BaseLib_OperatorMemory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
@@ -202,7 +203,8 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetWXID()
 		"Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7\r\n"
 	), m_StrDistinctID.GetBuffer());
 	
-	APIClient_Http_Request(_X("GET"), tszUrlBuffer, NULL, &nResponseCode, &ptszMsgBuffer, &nMsgLen, tszHdrBuffer);
+	USES_CONVERSION;
+	APIClient_Http_Request(_X("GET"), W2A(tszUrlBuffer), NULL, &nResponseCode, &ptszMsgBuffer, &nMsgLen, W2A(tszHdrBuffer));
 	BaseLib_OperatorCharset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
 
 	Json::Value st_JsonRoot;
@@ -218,9 +220,9 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetWXID()
 	}
 	if (Json::stringValue == st_JsonRoot["state"].type())
 	{
-		if (1 != _ttoi(st_JsonRoot["state"].asCString()))
+		if (1 != atoi(st_JsonRoot["state"].asCString()))
 		{
-			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
+			AfxMessageBox(A2W(st_JsonRoot["errorMsg"].asCString()));
 			free(ptszGBKBuffer);
 			return FALSE;
 		}
@@ -229,12 +231,12 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetWXID()
 	{
 		if (1 != st_JsonRoot["state"].asInt())
 		{
-			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
+			AfxMessageBox(A2W(st_JsonRoot["errorMsg"].asCString()));
 			free(ptszGBKBuffer);
 			return FALSE;
 		}
 	}
-	m_EditWXID.SetWindowText(st_JsonRoot["data"]["tn"].asCString());
+	m_EditWXID.SetWindowText(A2W(st_JsonRoot["data"]["tn"].asCString()));
 
 	free(ptszGBKBuffer);
 	BaseLib_OperatorMemory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
@@ -285,8 +287,8 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetVer()
 		"Referer: https://huaxi2.mobimedical.cn/index.php?g=Wap&m=WxView&d=registerAndAppoint&a=index\r\n"
 		"Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7\r\n"
 	), m_StrDistinctID.GetBuffer());
-
-	APIClient_Http_Request(_X("GET"), lpszUrl, NULL, &nResponseCode, &ptszMsgBuffer, &nMsgLen, tszHdrBuffer);
+	USES_CONVERSION;
+	APIClient_Http_Request(_X("GET"), W2A(lpszUrl), NULL, &nResponseCode, &ptszMsgBuffer, &nMsgLen, W2A(tszHdrBuffer));
 	if (nMsgLen <= 0)
 	{
 		AfxMessageBox(_T("获取验证图片失败"));
@@ -334,11 +336,11 @@ void CDialog_DayDoctor::OnNMClickList1(NMHDR* pNMHDR, LRESULT* pResult)
 {
 	LPNMITEMACTIVATE pNMItemActivate = reinterpret_cast<LPNMITEMACTIVATE>(pNMHDR);
 	// TODO: 在此添加控件通知处理程序代码
-	m_EditName.SetWindowText("");
-	m_EditLevel.SetWindowText("");
-	m_EditCode.SetWindowText("");
-	m_EditGoodat.SetWindowText("");
-	m_EditTicket.SetWindowText("");
+	m_EditName.SetWindowText(_T(""));
+	m_EditLevel.SetWindowText(_T(""));
+	m_EditCode.SetWindowText(_T(""));
+	m_EditGoodat.SetWindowText(_T(""));
+	m_EditTicket.SetWindowText(_T(""));
 
 	POSITION pSt_PosItem = m_ListDoctor.GetFirstSelectedItemPosition();
 	if (NULL == pSt_PosItem)
@@ -394,8 +396,9 @@ void CDialog_DayDoctor::OnNMClickList1(NMHDR* pNMHDR, LRESULT* pResult)
 	((CXEngineGrabVotesDlg*)AfxGetMainWnd())->m_TabDay.GetItem(((CXEngineGrabVotesDlg*)AfxGetMainWnd())->m_TabDay.GetCurSel(), &st_TCItem);
 	m_EditCode.GetWindowText(m_StrDoctorID);
 
+	USES_CONVERSION;
 	_stprintf_s(tszMsgBuffer, _T("doctorid=%s&date=%s&LabelId=0&districtCode=%d"), m_StrDoctorID.GetBuffer(), tszItemText, pSt_DoctorInfo->nDistrictCode);
-	APIClient_Http_Request(_X("POST"), lpszUrl, tszMsgBuffer, &nResponseCode, &ptszMsgBuffer, &nMsgLen, tszHdrBuffer);
+	APIClient_Http_Request(_X("POST"), W2A(lpszUrl), W2A(tszMsgBuffer), &nResponseCode, &ptszMsgBuffer, &nMsgLen, W2A(tszHdrBuffer));
 	BaseLib_OperatorCharset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
 
 	Json::Value st_JsonRoot;
@@ -411,9 +414,9 @@ void CDialog_DayDoctor::OnNMClickList1(NMHDR* pNMHDR, LRESULT* pResult)
 	}
 	if (Json::stringValue == st_JsonRoot["state"].type())
 	{
-		if (1 != _ttoi(st_JsonRoot["state"].asCString()))
+		if (1 != atoi(st_JsonRoot["state"].asCString()))
 		{
-			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
+			AfxMessageBox(A2W(st_JsonRoot["errorMsg"].asCString()));
 			free(ptszGBKBuffer);
 			return ;
 		}
@@ -422,7 +425,7 @@ void CDialog_DayDoctor::OnNMClickList1(NMHDR* pNMHDR, LRESULT* pResult)
 	{
 		if (1 != st_JsonRoot["state"].asInt())
 		{
-			AfxMessageBox(st_JsonRoot["errorMsg"].asCString());
+			AfxMessageBox(A2W(st_JsonRoot["errorMsg"].asCString()));
 			free(ptszGBKBuffer);
 			return ;
 		}
@@ -434,7 +437,7 @@ void CDialog_DayDoctor::OnNMClickList1(NMHDR* pNMHDR, LRESULT* pResult)
 	{
 		if (Json::ValueType::stringValue == st_JsonArray[i]["SeqNoStrLast"].type())
 		{
-			m_ListInfo.InsertItem(i, st_JsonArray[i]["SeqNoStrLast"].asCString());
+			m_ListInfo.InsertItem(i, A2W(st_JsonArray[i]["SeqNoStrLast"].asCString()));
 		}
 		else
 		{
@@ -443,10 +446,10 @@ void CDialog_DayDoctor::OnNMClickList1(NMHDR* pNMHDR, LRESULT* pResult)
 			_stprintf(tszTmp, _T("%d"), st_JsonArray[i]["SeqNoStrLast"].asInt());
 			m_ListInfo.InsertItem(i, tszTmp);
 		}
-		m_ListInfo.SetItemText(i, 1, st_JsonArray[i]["period"].asCString());
-		m_ListInfo.SetItemText(i, 2, st_JsonArray[i]["week"].asCString());
-		m_ListInfo.SetItemText(i, 3, st_JsonArray[i]["LabelId"].asCString());
-		m_ListInfo.SetItemText(i, 4, st_JsonArray[i]["schedulid"].asCString());
+		m_ListInfo.SetItemText(i, 1, A2W(st_JsonArray[i]["period"].asCString()));
+		m_ListInfo.SetItemText(i, 2, A2W(st_JsonArray[i]["week"].asCString()));
+		m_ListInfo.SetItemText(i, 3, A2W(st_JsonArray[i]["LabelId"].asCString()));
+		m_ListInfo.SetItemText(i, 4, A2W(st_JsonArray[i]["schedulid"].asCString()));
 	}
 	free(ptszGBKBuffer);
 	BaseLib_OperatorMemory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
