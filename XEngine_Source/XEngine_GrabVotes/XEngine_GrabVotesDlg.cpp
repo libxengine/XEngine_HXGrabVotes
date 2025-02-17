@@ -138,8 +138,8 @@ void CXEngineGrabVotesDlg::OnBnClickedButton1()
 	memset(ptszGBKBuffer, '\0', 1024000);
 	USES_CONVERSION;
 	APIClient_Http_Request(_X("GET"), W2A(lpszUrl), NULL, &nResponseCode, &ptszMsgBuffer, &nMsgLen, W2A(tszHdrBuffer));
-	BaseLib_OperatorCharset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
-	BaseLib_OperatorMemory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
+	BaseLib_Charset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
+	BaseLib_Memory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
 
 	Json::Value st_JsonRoot;
 	Json::CharReaderBuilder st_JsonBuild;
@@ -230,7 +230,7 @@ void CXEngineGrabVotesDlg::OnBnClickedButton2()
 	CString m_StrDistinctID;
 	TCHAR tszHdrBuffer[4096];
 	CHAR* ptszMsgBuffer = NULL;
-	XENGINE_LIBTIMER st_LibTime;
+	XENGINE_LIBTIME st_LibTime;
 
 	if (NULL != pm_DialogDoctor)
 	{
@@ -248,11 +248,11 @@ void CXEngineGrabVotesDlg::OnBnClickedButton2()
 		pm_DialogDoctor = NULL;
 	}
 	memset(tszHdrBuffer, '\0', sizeof(tszHdrBuffer));
-	memset(&st_LibTime, '\0', sizeof(XENGINE_LIBTIMER));
+	memset(&st_LibTime, '\0', sizeof(XENGINE_LIBTIME));
 
 	m_EditDistinctid.GetWindowText(m_StrDistinctID);
 
-	BaseLib_OperatorTime_GetSysTime(&st_LibTime);
+	BaseLib_Time_GetSysTime(&st_LibTime);
 
 	LPCTSTR lpszUrl = _T("https://huaxi2.mobimedical.cn/index.php?g=WapApi&m=Register&a=getRegistDate");
 	_stprintf_s(tszHdrBuffer, _T("Host: huaxi2.mobimedical.cn\r\n"
@@ -278,8 +278,8 @@ void CXEngineGrabVotesDlg::OnBnClickedButton2()
 
 	USES_CONVERSION;
 	APIClient_Http_Request(_X("GET"), W2A(lpszUrl), NULL, &nResponseCode, &ptszMsgBuffer, &nMsgLen, W2A(tszHdrBuffer));
-	BaseLib_OperatorCharset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
-	BaseLib_OperatorMemory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
+	BaseLib_Charset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
+	BaseLib_Memory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
 
 	Json::Value st_JsonRoot;
 	Json::CharReaderBuilder st_JsonBuild;
@@ -346,16 +346,16 @@ BOOL CXEngineGrabVotesDlg::XEngine_GrabVotes_Post(int nSelected)
 	TCHAR tszItemText[64];
 	CHAR* ptszMsgBuffer = NULL;
 	CHAR* ptszGBKBuffer = (char*)malloc(1024000);
-	XENGINE_LIBTIMER st_LibTime;
+	XENGINE_LIBTIME st_LibTime;
 
 	memset(tszHdrBuffer, '\0', sizeof(tszHdrBuffer));
 	memset(tszBodyBuffer, '\0', sizeof(tszBodyBuffer));
 	memset(tszItemText, '\0', sizeof(tszItemText));
-	memset(&st_LibTime, '\0', sizeof(XENGINE_LIBTIMER));
+	memset(&st_LibTime, '\0', sizeof(XENGINE_LIBTIME));
 
 	m_EditDistinctid.GetWindowText(m_StrDistinctID);
 
-	BaseLib_OperatorTime_GetSysTime(&st_LibTime);
+	BaseLib_Time_GetSysTime(&st_LibTime);
 
 	LPCTSTR lpszUrl = _T("https://huaxi2.mobimedical.cn/index.php?g=WapApi&m=Register&a=getDoctorList");
 	_stprintf_s(tszHdrBuffer, _T("Host: huaxi2.mobimedical.cn\r\n"
@@ -388,7 +388,7 @@ BOOL CXEngineGrabVotesDlg::XEngine_GrabVotes_Post(int nSelected)
 	_stprintf_s(tszMsgBuffer, _T("deptId=%d&date=%s&SessionType=&LabelId=%d&districtCode=%d"), pSt_Department->nDepId, tszItemText, pSt_Department->nLabelId, pSt_Department->nDistrictCode);
 	USES_CONVERSION;
 	APIClient_Http_Request(_X("POST"), W2A(lpszUrl), W2A(tszMsgBuffer), &nResponseCode, &ptszMsgBuffer, &nMsgLen, W2A(tszHdrBuffer));
-	BaseLib_OperatorCharset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
+	BaseLib_Charset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
 	TCHAR tszFileName[MAX_PATH];
 	memset(tszFileName, '\0', MAX_PATH);
 
@@ -487,7 +487,7 @@ BOOL CXEngineGrabVotesDlg::XEngine_GrabVotes_Post(int nSelected)
 		pm_DialogDoctor[nSelected].m_ListDoctor.SetItemData(i, (DWORD_PTR)pSt_DoctorInfo);
 	}
 	free(ptszGBKBuffer);
-	BaseLib_OperatorMemory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
+	BaseLib_Memory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
 	return TRUE;
 }
 void CXEngineGrabVotesDlg::OnTcnSelchangeTab1(NMHDR* pNMHDR, LRESULT* pResult)

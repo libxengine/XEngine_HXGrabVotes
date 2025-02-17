@@ -122,7 +122,7 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetInfo()
 	_stprintf_s(tszMsgBuffer, _T("doctorid=%s&date=%s&LabelId=%s&districtCode=%s"), m_StrDoctorID.GetBuffer(), tszItemText, m_StrLabelID.GetBuffer(), m_StrScheudleID.GetBuffer());
 	USES_CONVERSION;
 	APIClient_Http_Request("POST", W2A(lpszUrl), W2A(tszMsgBuffer), &nResponseCode, &ptszMsgBuffer, &nMsgLen, W2A(tszHdrBuffer));
-	BaseLib_OperatorCharset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
+	BaseLib_Charset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
 
 	Json::Value st_JsonRoot;
 	Json::CharReaderBuilder st_JsonBuild;
@@ -160,7 +160,7 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetInfo()
 	m_EditProUserID.SetWindowText(A2W(st_JsonArray[0]["userid"].asCString()));
 
 	free(ptszGBKBuffer);
-	BaseLib_OperatorMemory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
+	BaseLib_Memory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
 	return TRUE;
 }
 
@@ -205,7 +205,7 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetWXID()
 	
 	USES_CONVERSION;
 	APIClient_Http_Request(_X("GET"), W2A(tszUrlBuffer), NULL, &nResponseCode, &ptszMsgBuffer, &nMsgLen, W2A(tszHdrBuffer));
-	BaseLib_OperatorCharset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
+	BaseLib_Charset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
 
 	Json::Value st_JsonRoot;
 	Json::CharReaderBuilder st_JsonBuild;
@@ -239,7 +239,7 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetWXID()
 	m_EditWXID.SetWindowText(A2W(st_JsonRoot["data"]["tn"].asCString()));
 
 	free(ptszGBKBuffer);
-	BaseLib_OperatorMemory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
+	BaseLib_Memory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
 	return TRUE;
 }
 
@@ -310,7 +310,7 @@ BOOL CDialog_DayDoctor::Dialog_Doctor_GetVer()
 	}
 
 	free(ptszGBKBuffer);
-	BaseLib_OperatorMemory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
+	BaseLib_Memory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
 	return TRUE;
 }
 void CDialog_DayDoctor::OnBnClickedButton3()
@@ -399,7 +399,7 @@ void CDialog_DayDoctor::OnNMClickList1(NMHDR* pNMHDR, LRESULT* pResult)
 	USES_CONVERSION;
 	_stprintf_s(tszMsgBuffer, _T("doctorid=%s&date=%s&LabelId=0&districtCode=%d"), m_StrDoctorID.GetBuffer(), tszItemText, pSt_DoctorInfo->nDistrictCode);
 	APIClient_Http_Request(_X("POST"), W2A(lpszUrl), W2A(tszMsgBuffer), &nResponseCode, &ptszMsgBuffer, &nMsgLen, W2A(tszHdrBuffer));
-	BaseLib_OperatorCharset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
+	BaseLib_Charset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
 
 	Json::Value st_JsonRoot;
 	Json::CharReaderBuilder st_JsonBuild;
@@ -452,7 +452,7 @@ void CDialog_DayDoctor::OnNMClickList1(NMHDR* pNMHDR, LRESULT* pResult)
 		m_ListInfo.SetItemText(i, 4, A2W(st_JsonArray[i]["schedulid"].asCString()));
 	}
 	free(ptszGBKBuffer);
-	BaseLib_OperatorMemory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
+	BaseLib_Memory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
 
 	*pResult = 0;
 }

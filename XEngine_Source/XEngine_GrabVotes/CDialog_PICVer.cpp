@@ -116,7 +116,7 @@ void CDialog_PICVer::OnBnClickedButton1()
 	_stprintf_s(tszBodyBuffer, _T("tagArray=%s&schedulid=%s&deptId=%d&userid=%s&is_ai=&token=%s"), tszMousePoint, m_StrSchedule.GetBuffer(), pSt_Department->nDepId, m_StrUserID.GetBuffer(), m_StrWXID.GetBuffer());
 	USES_CONVERSION;
 	APIClient_Http_Request(_X("POST"), W2A(lpszUrl), W2A(tszBodyBuffer), &nResponseCode, &ptszMsgBuffer, &nMsgLen, W2A(tszHdrBuffer));
-	BaseLib_OperatorCharset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
+	BaseLib_Charset_UTFToAnsi(ptszMsgBuffer, ptszGBKBuffer, &nMsgLen);
 
 	Json::Value st_JsonRoot;
 	Json::CharReaderBuilder st_JsonBuild;
@@ -148,7 +148,7 @@ void CDialog_PICVer::OnBnClickedButton1()
 
 	AfxMessageBox(A2W(st_JsonRoot["errorMsg"].asCString()));
 	free(ptszGBKBuffer);
-	BaseLib_OperatorMemory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
+	BaseLib_Memory_FreeCStyle((XPPMEM)&ptszMsgBuffer);
 
 	bRet ? OnOK() : OnCancel();
 }
