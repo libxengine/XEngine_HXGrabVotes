@@ -27,7 +27,7 @@ git submodule update
 git clone https://gitee.com/xengine/XEngine_OPenSource.git XEngine_Source/XEngine_DependLibrary/XEngine_OPenSource
 
 #### Windows
-使用VS打开并且编译,支持WINDOWS 7SP1以上系统  
+使用VS打开并且编译,支持WINDOWS 10以上系统  
 直接运行即可
 
 #### 使用说明
